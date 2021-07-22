@@ -77,7 +77,7 @@
   </h3>
   <p>
     Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
-    There are few projects where the work result is visible. Looking forward to contribute Python projects.
+    There are few projects where the work result is visible. Looking forward to contribute Python projects and fill this table up.
   </p>
   <table>
     <tr>
