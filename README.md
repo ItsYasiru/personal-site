@@ -77,7 +77,7 @@
   </h3>
   <p>
     Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
-    There are few projects where the work result is visible.
+    There are few projects where the work result is visible. Looking forward to contribute Python projects.
   </p>
   <table>
     <tr>
@@ -94,7 +94,7 @@
       </td>
       <td>
         Worked on a discord bot that ran along side a public mindustry server. 
-        The bot is capable of retriving player statistics, match statistics served by a backend API & more.
+        The bot is capable of retriving player statistics, match statistics & game replays served by a backend API & more.
       </td>
     </tr>
   </table>
