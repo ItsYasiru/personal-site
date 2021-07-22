@@ -26,7 +26,7 @@
     Skills
   </h3>
   <p>
-    This are my skills, I code everyday gaining experience and sharpening my skills day by day to reach my goal.
+    These are my skills, I code everyday gaining experience and sharpening my skills day by day to reach my goal.
   </p>
   <table>
     <tr>
