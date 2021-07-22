@@ -99,6 +99,6 @@
     </tr>
   </table>
   <p align="right">
-    <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for creative influence</i>
+    <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for the layout idea</i>
   </p>
 </div>
