@@ -81,5 +81,5 @@
   </table>
 </div>
 <p align="right">
-  <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for the profile layout</i>
+  <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for the profile base layout idea</i>
 </p>
