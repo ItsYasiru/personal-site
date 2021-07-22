@@ -14,8 +14,10 @@
    About me
   </h3>
   <p>
-    I'm still in high school studying for GCE AL's in 2023 mathematics stream. Got into programming when the pandemic lockdown began in 2020 April.
-    Got into discord, met a dev who intoduced me to to javascript but suggested me to learn python. 
+    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk/">Trinity College Kandy</a>
+    <i>~ Respice Finem</i>.
+    Got into programming when the pandemic lockdown began in 2020 April.
+    Got into discord, met a dev who intoduced me to to javascript who later suggested me to learn python. 
     Met <a href="https://github.com/LeoSko">LeoSko</a> who gave me good advice and an opportunity.
     I plan to become a full stack dev one day.
   </p>
@@ -63,8 +65,11 @@
     Statistics
   </h3>
   <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=ItsJoshie&show_icons=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" height=195px />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsJoshie&show_icons=true&show_icons=true&title_color=&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" height=195px />
+    My github statistics,
+  </p>
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=ItsJoshie&show_icons=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=495px height=195px />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsJoshie&show_icons=true&show_icons=true&title_color=&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=355px height=195px />
   </p>
   
   <h3>
@@ -93,8 +98,7 @@
       </td>
     </tr>
   </table>
+  <p align="right">
+    <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for creative influence</i>
+  </p>
 </div>
-
-<p align="right">
-  <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for creative influence</i>
-</p>
