@@ -59,7 +59,7 @@
     Projects
   </h3>
   <p>
-    Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing.
+    Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
     There are few projects where the work result is visible.
   </p>
   <table>
