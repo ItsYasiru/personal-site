@@ -94,7 +94,7 @@
       <a href="https://github.com/ItsJoshie" target="_blank">Myself</a>
     </td>
     <td>
-      My website.
+      My website. https://itsjoshie.github.io/
     </td>
   </tr>
   </table>
