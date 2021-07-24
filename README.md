@@ -10,7 +10,7 @@
 <div align="left">
   <h3>About me</h3>
   <p>
-    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk/">Trinity College Kandy</a><i>~ Respice Finem</i>.
+    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk">Trinity College Kandy</a><i>~ Respice Finem</i>.
     Got into programming when the pandemic lockdown began in 2020 April.
     Got into discord, met a dev who intoduced me to to javascript who later suggested me to learn python.
     Met <a href="https://github.com/LeoSko">LeoSko</a> who gave me good advice and an opportunity.
@@ -76,7 +76,7 @@
     </tr>
     <tr>
       <td>
-      <a href="https://discord.com/invite/Hjr92J7">Mindustry Ranked</a>
+        <a href="https://discord.com/invite/Hjr92J7">Mindustry Ranked</a>
       </td>
       <td>
         <a href="https://github.com/LeoSko">LeoSko</a>
@@ -89,6 +89,6 @@
   </table>
 
   <p align="right">
-    <i>~ Credit to <a href="https://github.com/AbstractUmbra/">AbstractUmbra</a> for the layout idea</i>
+    <i>~ Credit to <a href="https://github.com/AbstractUmbra">AbstractUmbra</a> for the layout idea</i>
   </p>
 </div>
