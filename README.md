@@ -43,14 +43,14 @@
       <td>Wouldn't exacty call a language but meh.</td>
     </tr>
     <tr>
+      <td>CSS</td>
+      <td>Intermediate</td>
+      <td>Learning CSS along with HTML & Javascript.</td>
+    </tr>
+    <tr>
       <td>Javascript</td>
       <td>Beginner</td>
       <td>Just started with basic application of javascript onto websites.</td>
-    </tr>
-    <tr>
-      <td>CSS</td>
-      <td>Beginner</td>
-      <td>Learning CSS along with HTML & Javascript.</td>
     </tr>
   </table>
 
