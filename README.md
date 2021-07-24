@@ -10,10 +10,10 @@
 <div align="left">
   <h3>About me</h3>
   <p>
-    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk">Trinity College Kandy</a><i>~ Respice Finem</i>.
+    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a><i>~ Respice Finem</i>.
     Got into programming when the pandemic lockdown began in 2020 April.
     Got into discord, met a dev who intoduced me to to javascript who later suggested me to learn python.
-    Met <a href="https://github.com/LeoSko">LeoSko</a> who gave me good advice and an opportunity.
+    Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity.
     I plan to become a full stack dev one day.
   </p>
 
@@ -76,16 +76,27 @@
     </tr>
     <tr>
       <td>
-        <a href="https://discord.com/invite/Hjr92J7">Mindustry Ranked</a>
+        <a href="https://discord.com/invite/Hjr92J7" target="_blank">Mindustry Ranked</a>
       </td>
       <td>
-        <a href="https://github.com/LeoSko">LeoSko</a>
+        <a href="https://github.com/LeoSko" target="_blank">LeoSko</a>
       </td>
       <td>
         Worked on a discord bot that ran along side a public mindustry server.
         The bot is capable of retriving player statistics, match statistics & game replays served by a backend API & more.
       </td>
     </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/ItsJoshie/ItsJoshie.github.io" target="_blank">My website</a>
+    </td>
+    <td>
+      <a href="https://github.com/ItsJoshie" target="_blank">Myself</a>
+    </td>
+    <td>
+      My website.
+    </td>
+  </tr>
   </table>
 
   <p align="right">
