@@ -24,7 +24,7 @@
   <table>
     <tr>
       <th width=200px>Language</th>
-      <th>Level</th>
+      <th width=130px>Level</th>
       <th>Extra</th>
     </tr>
       <tr>
@@ -71,7 +71,7 @@
   <table>
     <tr>
       <th width=200px>Name</th>
-      <th>Owner</th>
+      <th width=130px>Owner</th>
       <th>Details</tr>
     </tr>
     <tr>
