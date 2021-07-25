@@ -88,7 +88,7 @@
     </tr>
   <tr>
     <td>
-      <a href="https://github.com/ItsJoshie/Joshies-Website" target="_blank">My website</a>
+      <a href="https://github.com/ItsJoshie/ItsJoshie" target="_blank">My website</a>
     </td>
     <td>
       <a href="https://github.com/ItsJoshie" target="_blank">Myself</a>
