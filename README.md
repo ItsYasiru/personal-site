@@ -23,7 +23,7 @@
   </p>
   <table>
     <tr>
-      <th>Language</th>
+      <th width=200px>Language</th>
       <th>Level</th>
       <th>Extra</th>
     </tr>
@@ -70,7 +70,7 @@
   </p>
   <table>
     <tr>
-      <th>Name</th>
+      <th width=200px>Name</th>
       <th>Owner</th>
       <th>Details</tr>
     </tr>
