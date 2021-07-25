@@ -88,13 +88,13 @@
     </tr>
   <tr>
     <td>
-      <a href="https://github.com/ItsJoshie/ItsJoshie.github.io" target="_blank">My website</a>
+      <a href="https://github.com/ItsJoshie/Joshies-Website" target="_blank">My website</a>
     </td>
     <td>
       <a href="https://github.com/ItsJoshie" target="_blank">Myself</a>
     </td>
     <td>
-      My website. https://itsjoshie.github.io/
+      My website. https://itsjoshie.github.io/Joshies-Website/
     </td>
   </tr>
   </table>
