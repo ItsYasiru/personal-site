@@ -10,7 +10,7 @@
 <div align="left">
   <h3>About me</h3>
   <p>
-    I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a><i>~ Respice Finem</i>.
+    I'm still a high school student studying for my GCE AL's in 2023 mathematics stream, at <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a><i>~ Respice Finem</i>.
     Got into programming when the pandemic lockdown began in 2020 April.
     Got into discord, met a dev who intoduced me to to javascript who later suggested me to learn python.
     Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity.
@@ -29,8 +29,8 @@
     </tr>
       <tr>
       <td>Python</td>
-      <td>Intermediate</td>
-      <td>Most fluent language. I've been coding discord bots, with python. Good with discord.py, pymongo, PyQt & more.</td>
+      <td>Experienced</td>
+      <td>Most fluent language I use to code. This is my strongest language now, I've been coding discord bots, several computer applications with python. Good with discord.py, pymongo, PyQt & more.</td>
     </tr>
     <tr>
       <td>Server Management</td>
