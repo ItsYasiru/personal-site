@@ -19,7 +19,7 @@
 
   <h3>Skills</h3>
   <p>
-    These are my skills, I code everyday gaining experience and sharpening my skills day by day to reach my goal.
+    These are my skills what I'm good and bad at, I code regularly gaining experience and sharpening my skills so this is work in progress.
   </p>
   <table>
     <tr>
