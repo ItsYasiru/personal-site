@@ -3,6 +3,12 @@ body {
     margin: 0 0 0 0;
 }
 
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .header {
     background-color: #23272A;
     color: #FFFFFF;
