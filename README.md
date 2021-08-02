@@ -44,11 +44,11 @@
       <td>Intermediate</td>
       <td>Wouldn't exacty call a language but meh.</td>
     </tr>
-	<tr>
-	  <td>HTML</td>
-	  <td>Intermediate</td>
-	  <td>Wouldn't exacty call a language but meh.</td>
-	</tr>
+<tr>
+<td>Databases</td>
+<td>Intermediate</td>
+<td>So far I've worked with mongo db and PostgreSQL</td>
+</tr>
 	<tr>
 	  <td>CSS</td>
 	  <td>Intermediate</td>
