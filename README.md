@@ -10,10 +10,12 @@
 <div align="left">
   <h3>About me</h3>
   <p>
-	I'm still in high school studying for GCE AL's in 2023 mathematics stream, in <a href="https://www.trinitycollege.lk" target="_blank" >Trinity College Kandy</a> <i>~ Respice Finem</i>.
+	I'm 16 years old, still in high school studying for GCE AL's in 2023 mathematics stream, 
+	in <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a> <i>~ Respice Finem</i>.
 	Got into programming when the pandemic lockdown began in 2020 April,
-	When a dev who intoduced me to to javascript who later suggested me to learn python.
-	Met <a href="https://github.com/LeoSko" target="_blank" >LeoSko</a> who gave me good advice and an opportunity.
+	when a dev who intoduced me to to javascript who later suggested me to learn python and javascript.
+	Since then I've been coding a lot in both the languages.
+	Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project.
 	I plan to become a full stack dev one day.
   </p>
 
@@ -37,6 +39,11 @@
 	  <td>Intermediate</td>
 	  <td>Have experience with handling Linux servers, SSH, FTP & Process management.</td>
 	</tr>
+	<tr>
+      <td>HTML</td>
+      <td>Intermediate</td>
+      <td>Wouldn't exacty call a language but meh.</td>
+    </tr>
 	<tr>
 	  <td>HTML</td>
 	  <td>Intermediate</td>
