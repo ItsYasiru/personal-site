@@ -18,7 +18,6 @@
         Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project.
         I plan to become a full stack dev one day.
     </p>
-
     <h3>Skills</h3>
     <p>
         These are my skills what I'm good and bad at, I code regularly gaining experience and sharpening my skills so this is work in progress.
