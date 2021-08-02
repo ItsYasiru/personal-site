@@ -47,11 +47,14 @@ html, html a {
 
 .row {
     -ms-flex-wrap: wrap;
-    background-color: #FFFFFF;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     padding: 70 0 70 0;
+}
+
+.row h1 {
+    padding: 0 15 0 15;
 }
 
 .row p {
