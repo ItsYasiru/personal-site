@@ -49,7 +49,7 @@
         <tr>
             <td>Databases</td>
             <td>Intermediate</td>
-            <td>So far I've worked with mongo db and PostgreSQL</td>
+            <td>So far I've worked with mongo db and PostgreSQL.</td>
         </tr>
         <tr>
             <td>CSS</td>
@@ -63,9 +63,6 @@
         </tr>
     </table>
     <h3>Statistics</h3>
-    <p>
-        My github statistics,
-    </p>
     <p align="center">
         <img src="https://github-readme-stats.vercel.app/api?username=ItsJoshie&show_icons=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=495px height=195px />
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsJoshie&show_icons=true&show_icons=true&title_color=&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=355px height=195px />
@@ -73,7 +70,7 @@
     <h3>Projects</h3>
     <p>
         Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
-        There are few projects where the work result is visible. Looking forward to contribute Python projects and fill this table up.
+        There are few projects where the work result is visible. Looking forward to contribute to more projects and fill this table up.
     </p>
     <table>
         <tr>
