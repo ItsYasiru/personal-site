@@ -1,8 +1,8 @@
 ***
 <div align="center">
-    <h1>ItsJoshie</h1>
+    <h1>Yas_!_ru</h1>
     <p>
-        Hello, my name is joshie and I like to code as a hobby
+        Hello, my name is yasiru and I like to code as a hobby
     </p>
 </div>
 
@@ -64,8 +64,8 @@
     </table>
     <h3>Statistics</h3>
     <p align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=ItsJoshie&show_icons=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=495px height=195px />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsJoshie&show_icons=true&show_icons=true&title_color=&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=355px height=195px />
+        <img src="https://github-readme-stats.vercel.app/api?username=ItsYasiru&show_icons=true&include_all_commits=true&show_icons=true&title_color=fff&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=495px height=195px />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&show_icons=true&show_icons=true&title_color=&icon_color=f0f0f0&text_color=f0f0f0&bg_color=151b22&hide_border=true" width=355px height=195px />
     </p>
     <h3>Projects</h3>
     <p>
@@ -92,13 +92,13 @@
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/ItsJoshie/ItsJoshie" target="_blank">My website</a>
+                <a href="https://github.com/ItsYasiru/ItsYasiru" target="_blank">My website</a>
             </td>
             <td>
-                <a href="https://github.com/ItsJoshie" target="_blank">Myself</a>
+                <a href="https://github.com/ItsYasiru" target="_blank">Myself</a>
             </td>
             <td>
-                My website. https://itsjoshie.github.io/ItsJoshie/
+                My website. https://itsyasiru.github.io/itsyasiru/
             </td>
         </tr>
     </table>
