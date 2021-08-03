@@ -98,7 +98,7 @@
                 <a href="https://github.com/ItsYasiru" target="_blank">Myself</a>
             </td>
             <td>
-                My website. https://itsyasiru.github.io/itsyasiru/
+                My website. https://itsyasiru.github.io/ItsYasiru/
             </td>
         </tr>
     </table>
