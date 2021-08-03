@@ -9,6 +9,54 @@ html, html a {
     -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+table{
+    width: 88%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ADADAD;
+    padding: 10 10 10 10;
+}
+
+tr:hover {
+    color: #FFFFFF;
+    background-color: #23272A;
+}
+
+tr:hover a {
+    color: #FFFFFF;
+}
+
+th {
+    border: 1px solid #000000;
+    background-color: #ADADAD;
+    color: #23272A;
+    padding: 20 0 20 0;
+}
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+
+p {
+    padding: 15px 15px 15px 15px;
+}
+
 .header {
     background-color: #23272A;
     color: #FFFFFF;
@@ -45,82 +93,22 @@ html, html a {
     color: #000000;
 }
 
-.row {
-    -ms-flex-wrap: wrap;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 70 0 70 0;
-}
-
-.row h1 {
-    padding: 0 15 0 15;
-}
-
-.row p {
-    padding: 15 15 15 15;
-}
-
-.side {
-    -ms-flex: 30%;
-    background-color: #FFFFFF;
-    flex: 30%;
-    padding: 0 0 0 0;
-}
-
-.side a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.side a:hover {
-    color: #00FFFF;
-    text-decoration: underline;
-}
-
-.side img {
-    border-radius: 10px 10px 10px 10px;
-}
-
 .main {
     -ms-flex: 70%;
-    flex: 70%;
-    padding: 0 0 0 0;
+    flex: 60%;
+    padding: 50 50 50 50;
 }
 
-.main a {
-    color: #000000;
-    text-decoration: none;
+.container {
+    padding: 20px 20px 20px 20px;
 }
 
-.main a:hover {
-    color: #00FFFF;
-    text-decoration: underline;
+.container_left {
+    float: left;
 }
 
-.main table{
-    border-collapse: collapse;
-}
-
-.main td {
-    border: 1px solid #ADADAD;
-    padding: 10 10 10 10;
-}
-
-.main tr:hover {
-    color: #FFFFFF;
-    background-color: #23272A;
-}
-
-.main tr:hover a {
-    color: #FFFFFF;
-}
-
-.main th {
-    border: 1px solid #000000;
-    background-color: #ADADAD;
-    color: #23272A;
-    padding: 20 0 20 0;
+.container_right {
+    float: right;
 }
 
 @media screen and (max-width: 700px) {
