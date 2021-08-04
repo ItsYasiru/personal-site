@@ -92,13 +92,24 @@
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/ItsYasiru/ItsYasiru" target="_blank">My website</a>
+                <a target="_blank" href="https://itsyasiru.github.io/ItsYasiru">My Website</a>
             </td>
             <td>
-                <a href="https://github.com/ItsYasiru" target="_blank">Myself</a>
+                <a target="_blank" href="https://github.com/ItsYasiru">Yas_!_ru</a>
             </td>
             <td>
-                My website. https://itsyasiru.github.io/ItsYasiru/
+                https://itsyasiru.github.io/ItsYasiru/
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://line-a-photography.netlify.app" target="_blank">Website for Line A</a>
+            </td>
+            <td>
+                <a href="https://www.facebook.com/Achiy-Line-A-photography-105492708437210" target="_blank">Line A Photography</a>
+            </td>
+            <td>
+                https://line-a-photography.netlify.app
             </td>
         </tr>
     </table>
