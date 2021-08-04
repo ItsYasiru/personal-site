@@ -10,7 +10,7 @@
 <div align="left">
     <h3>About me</h3>
     <p>
-        I'm 16 years old, still in high school studying for GCE AL's in 2023 mathematics stream,
+        I'm 16 years old, still in high school studying for 2023 GCE AL's in mathematics stream,
         in <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a> <i>~ Respice Finem</i>.
         Got into programming when the pandemic lockdown began in 2020 April,
         when a dev who intoduced me to to javascript who later suggested me to learn python and javascript.
