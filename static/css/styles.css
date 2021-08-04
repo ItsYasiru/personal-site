@@ -137,7 +137,7 @@ th {
 }
 
 @media screen and (max-width: 400px) {
-	.topnav a {
+	.navbar a {
 		float: none;
 		width: 100%;
 	}
