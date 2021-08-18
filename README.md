@@ -10,17 +10,13 @@
 <div align="left">
     <h3>About me</h3>
     <p>
-        I'm 16 years old, still in high school studying for 2023 GCE AL's in mathematics stream,
-        in <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a> <i>~ Respice Finem</i>.
-        Got into programming when the pandemic lockdown began in 2020 April,
-        when a dev who intoduced me to to javascript who later suggested me to learn python and javascript.
-        Since then I've been coding a lot in both the languages.
-        Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project.
-        I plan to become a full stack dev one day.
+        I'm 16 years old studying in high school for 2023 GCE AL's <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a> <i>~ Respice Finem</i>.
+        Got into programming when the pandemic lockdown began in 2020 April, when a dev introduced javascript, who later suggested learning python and javascript.
+        Since then I've been coding a lot in both languages. Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project. I plan to become a full-stack dev one day.
     </p>
     <h3>Skills</h3>
     <p>
-        These are my skills what I'm good and bad at, I code regularly gaining experience and sharpening my skills so this is work in progress.
+        These are my skills, what I'm good and bad at. I code regularly gaining experience and sharpening my skills so this is work in progress.
     </p>
     <table>
         <tr>
@@ -32,8 +28,7 @@
             <td>Python</td>
             <td>Experienced</td>
             <td>
-                This is my strongest language now, I've been coding discord bots,
-                several computer applications with python. Good with discord.py, pymongo, PyQt & more.
+                This is my strongest language now. I have been coding discord bots, several computer applications with python. Good with discord.py, pymongo, PyQt & more.
             </td>
         </tr>
         <tr>
@@ -69,8 +64,8 @@
     </p>
     <h3>Projects</h3>
     <p>
-        Most of the projects i handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
-        There are few projects where the work result is visible. Looking forward to contribute to more projects and fill this table up.
+        Most of the projects I handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
+        There are few projects where the work result is visible. I'm looking forward to contributing to more projects and fill this table up.
     </p>
     <table>
         <tr>
@@ -86,8 +81,8 @@
                 <a href="https://github.com/LeoSko" target="_blank">LeoSko</a>
             </td>
             <td>
-                Worked on a discord bot that ran along side a public mindustry server.
-                The bot is capable of retriving player statistics, match statistics & game replays served by a backend API & more.
+                Built a discord bot that ran alongside a public mindustry server.
+                The bot that's capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API & more.
             </td>
         </tr>
         <tr>
