@@ -67,47 +67,35 @@
         Most of the projects I handled/contributed are not open source as the owner/me of the project is not comfortable with sharing the source code.
         There are few projects where the work result is visible. I'm looking forward to contributing to more projects and fill this table up.
     </p>
-    <table>
-        <tr>
-            <th width=200px>Name</th>
-            <th width=130px>Owner</th>
-            <th>Details</tr>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://discord.com/invite/Hjr92J7" target="_blank">Mindustry Ranked</a>
-            </td>
-            <td>
-                <a href="https://github.com/LeoSko" target="_blank">LeoSko</a>
-            </td>
-            <td>
-                Built a discord bot that ran alongside a public mindustry server.
-                The bot that's capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API & more.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a target="_blank" href="https://itsyasiru.github.io/ItsYasiru">My Website</a>
-            </td>
-            <td>
-                <a target="_blank" href="https://github.com/ItsYasiru">Yas_!_ru</a>
-            </td>
-            <td>
-                https://itsyasiru.github.io/ItsYasiru/
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://line-a-photography.netlify.app" target="_blank">Website for Line A</a>
-            </td>
-            <td>
-                <a href="https://www.facebook.com/Achiy-Line-A-photography-105492708437210" target="_blank">Line A Photography</a>
-            </td>
-            <td>
-                https://line-a-photography.netlify.app
-            </td>
-        </tr>
-    </table>
+    <table align="center">
+    <tr>
+        <th width="20%">Name</th>
+        <th width="80%">Details</tr>
+    </tr>
+    <tr>
+        <td>
+            <a href="discord:https://discord.com/invite/Hjr92J7">Mindustry Ranked</a>
+        </td>
+        <td>
+            Built a discord bot that ran alongside a public mindustry server.
+            The bot that's capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API & more.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a target="_blank" href="https://itsyasiru.github.io/ItsYasiru">My Website</a>
+        </td>
+        <td>
+            <a target="_blank" href="https://itsyasiru.github.io/ItsYasiru">https://itsyasiru.github.io/ItsYasiru</a>
+        </td>
+    </tr>
+    <td>
+        <a href="https://line-a-photography.netlify.app" target="_blank">Website for Line A</a>
+    </td>
+    <td>
+        <a href="https://line-a-photography.netlify.app" target="_blank">https://line-a-photography.netlify.app</a>
+    </td>
+</table>
     <p align="right">
         <i>~ Credit to <a href="https://github.com/AbstractUmbra">AbstractUmbra</a> for the layout idea</i>
     </p>
