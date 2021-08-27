@@ -7,8 +7,8 @@ html {
 }
 
 body {
+	font-family: Arial;
 	background: #f1f1f1;
-	font-family: Helvetica;
 	margin: 0;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 .navbar a:hover {
+	text-decoration: none;
     background-color: #00FFFF;
     color: #000000;
 }
@@ -124,7 +125,6 @@ a {
 }
 
 a:hover {
-    color: #00FFFF;
     text-decoration: underline;
 }
 
@@ -141,7 +141,6 @@ th {
 
 @media screen and (max-width: 800px) {
 	.leftcolumn, .rightcolumn {
-		padding: 0;
 		width: 100%;
 	}
 }
