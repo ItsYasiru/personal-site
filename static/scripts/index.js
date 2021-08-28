@@ -28,16 +28,16 @@ function submitForm() {
     var email = document.getElementById('form-email').value;
 
     if (name == '' || email == '') {
-        alert("Fields cannot be empty!")
+        alert("A field cannot be empty!")
+    } else {
+        sendMessage(`Client request Name: **'${name}'** Email: **'${email}'**`)
+
+        var form = document.getElementById('form');
+        var formButton1 = document.getElementById('form-button-1');
+        var formButton2 = document.getElementById('form-button-2');
+
+        form.style.display = 'none';
+        formButton1.style.display = 'none';
+        formButton2.style.display = 'none';
     }
-
-    sendMessage(`Client request Name: **'${name}'** Email: **'${email}'**`)
-
-    var form = document.getElementById('form');
-    var formButton1 = document.getElementById('form-button-1');
-    var formButton2 = document.getElementById('form-button-2');
-
-    form.style.display = 'none';
-    formButton1.style.display = 'none';
-    formButton2.style.display = 'none';
 }
