@@ -56,14 +56,14 @@ body {
 	display: table;
 }
 
-.leftcolumn {
+.row .leftColumn {
 	float: left;
 	height: 100%;
 	padding: 0px 10px 0px 20px;
 	width: 25%;
 }
 
-.rightcolumn {
+.row .rightColumn {
 	float: left;
 	height: 100%;
 	padding: 0px 20px 0px 10px;
@@ -83,32 +83,29 @@ body {
 	margin: 20px 0px 20px 0px;
 	padding: 20px 20px 20px 20px;
     border-radius: 5px 5px 5px 5px;
-}
-
-.container {
 	width: 100%;
 }
 
-.container:after {
+.card:after {
 	clear: both;
 	content: "";
 	display: table;
 }
 
-.leftcontainer {
+.card .leftContainer {
 	float: left;
 	padding-right: 20px;
 	width: 25%;
 }
 
-.rightcontainer {
+.card .rightContainer {
 	float: left;
 	padding-left: 10px;
 	width: 75%;
 }
 
 button {
-	background-color: #ADADAD;
+	background-color: #23272A;
 	color: #FFFFFF;
     border: none;
 	font-size: 15px;
@@ -117,7 +114,7 @@ button {
 }
 
 button:hover {
-	background-color: #23272A;
+	background-color: #ADADAD;
     color: #FFFFFF;
 }
 
@@ -132,14 +129,15 @@ button a:hover {
 }
 
 form {
+	display: none;
 	width: 100%;
 }
 
 form input {
 	float: left;
-	height: 20px;
 	width: 80%;
     border: 1px solid #000000;
+	border-radius: 2px;
 }
 
 form label {
@@ -195,10 +193,10 @@ th {
 }
 
 @media screen and (max-width: 800px) {
-	.leftcolumn, .rightcolumn {
+	.row .leftColumn, .row .rightColumn {
 		width: 100%;
 	}
-	.leftcontainer, .rightcontainer {
+	.card .leftContainer, .card .rightContainer {
 		width: 100%;
 	}
 }
@@ -207,13 +205,13 @@ th {
 	body {
 		text-align: center;
 	}
-	.leftcolumn, .rightcolumn {
+	.row .leftColumn, .row .rightColumn {
 		padding: 5px 5px 5px 5px;
 	}
-	.leftcontainer, .rightcontainer {
+	.card .leftContainer, .rightContainer {
 		padding: 5px 5px 5px 5px;
 	}
-	.leftcolumn, .leftcontainer {
+	.row .leftColumn, .card .leftContainer {
 		padding-bottom: 25px;
 	}
 	.card {

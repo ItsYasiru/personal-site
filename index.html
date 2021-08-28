@@ -20,8 +20,8 @@
 	</div>
 
 	<nav class="navbar">
-		<a class="left" href="#about me">About me</a>
-		<a class="left" href="#skill set">Skill set</a>
+		<a class="left" href="#about-me">About me</a>
+		<a class="left" href="#skill-set">Skill set</a>
 		<a class="left" href="#projects">Projects</a>
 		<a class="left" href="#services">Services</a>
 
@@ -33,8 +33,8 @@
 
 	<div class="row">
 
-		<div class="leftcolumn">
-			<div id="about me" class="card">
+		<div class="leftColumn">
+			<div id="about-me" class="card">
 				<h2>About Me</h2>
 					<center><img width=90% height=90% alt="Failed to load image!" src="./static/images/profile_picture.jpg"></center>
 				<p>
@@ -46,9 +46,9 @@
 			</div>
 		</div>
 
-		<div class="rightcolumn">
-			<div id="skill set" class="card"><row class="container">
-				<div class="leftcontainer">
+		<div class="rightColumn">
+			<div id="skill-set" class="card">
+				<div class="leftContainer">
 					<h2>Skill Set</h2>
 					<p align="center">
 						These are my skills, what I'm good and bad at. Please note that this is work in progress.
@@ -56,7 +56,7 @@
 					<center><img width=100% height=100% alt="Failed to load image!" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&hide_title=true&border_color=ADADAD"></center>
 				</div>
 
-				<table class="rightcontainer">
+				<table class="rightContainer">
 					<tr>
 						<th width="20%">Language</th>
 						<th width="15%">Level</th>
@@ -94,16 +94,16 @@
 						<td>Just started with basic application of javascript onto websites.</td>
 					</tr>
 				</table>
-			</row></div>
+			</div>
 
-			<div id="projects" class="card"><row class="container">
-				<div class="leftcontainer">
+			<div id="projects" class="card">
+				<div class="leftContainer">
 					<h2>Projects</h2>
 					<p align="center">
 						Projects that I contribute to/handle. Looking forward to contribute to Python, JavaScript projects.
 					</p>
 				</div>
-				<table class="rightcontainer">
+				<table class="rightContainer">
 					<tr>
 						<th width="20%">Name</th>
 						<th width="80%">Details</tr>
@@ -113,7 +113,7 @@
 							<a href="discord:https://discord.com/invite/Hjr92J7">Mindustry Ranked</a>
 						</td>
 						<td>
-							Built a discord bot that ran alongside a public mindustry server.
+							Built "Ranked Bot" that ran alongside a public mindustry server.
 							The bot that's capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API & more.
 						</td>
 					</tr>
@@ -134,23 +134,24 @@
 						</td>
 					</tr>
 				</table>
-			</row></div>
+			</div>
 
-			<div id="services" class="card"><row class="container">
-				<div class="leftcontainer">
+			<div id="services" class="card">
+				<div class="leftContainer">
 					<h2>Services</h2>
-					<p align="center">Services I can provide you with.</p>
-					<form id="form" style="display: none;">
-						<label for="fname">Name</label><input type="text" id="form-name"><br><br>
-						<label for="lname">Email</label><input type="email" id="form-email"><br><br>
-					</form>
 					<center>
-						<button id="form-button-1" onclick="showForm()">Let's work together</button>
-						<button id="form-button-2" onclick="submitForm()"  style="display: none;">Submit</button>
+						<p>Services I can provide you with.</p>
+						<button id="form-button" onclick="openForm()">Let's work together</button>
+						<form id="form">
+							<label>Name</label><input type="text" id="form-name"><br><br>
+							<label>Email</label><input type="email" id="form-email"><br><br>
+							<button onclick="submitForm()">Submit</button>
+							<button href="#services" onclick="closeForm()">Cancel</button>
+						</form>
 					</center>
 				</div>
 
-				<table class="rightcontainer">
+				<table class="rightContainer">
 					<tr>
 						<th width="20%">Item</th>
 						<th width="80%">Details</th>
@@ -159,22 +160,22 @@
 						<td>A Discord bot</td>
 						<td>
 							I can develop a discord bot to do anything that can be done on discord with a bot, the way you need it to be done.
-							I ensure you a good product with quality for the price. I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
+							I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
 						</td>
 					</tr>
 					<tr>
 						<td>A Website</th>
-						<td>A website such as this one built the way you need it to look and behave.</th>
+						<td>A website built according to the way you need it to look and behave.</th>
 					</tr>
 				</table>
-			</row></div>
+			</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer">
 		<p>
-			This website was built by @Yas_!_ru, with HTML and CSS & hosted on Github pages.
+			This website was built by @Yas_!_ru with HTML, CSS and JavaScript. Hosted on Github pages.
 		</p>
 	</div>
 
