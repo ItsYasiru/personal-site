@@ -213,6 +213,9 @@ th {
 	.leftcontainer, .rightcontainer {
 		padding: 5px 5px 5px 5px;
 	}
+	.leftcolumn, .leftcontainer {
+		padding-bottom: 25px;
+	}
 	.card {
 		padding: 10px 10px 10px 10px;
 	}
