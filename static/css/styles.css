@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: Helvetica;
+	font-family: Arial;
 	background: #f1f1f1;
 	margin: 0;
 }
@@ -86,7 +86,6 @@ body {
 }
 
 .container {
-	padding: 5px 5px 5px 5px;
 	width: 100%;
 }
 
@@ -98,14 +97,54 @@ body {
 
 .leftcontainer {
 	float: left;
-	padding: 10px 10px 10px 10px;
+	padding-right: 20px;
 	width: 25%;
 }
 
 .rightcontainer {
 	float: left;
-	padding: 10px 10px 10px 10px;
+	padding-left: 10px;
 	width: 75%;
+}
+
+button {
+	background-color: #ADADAD;
+	color: #FFFFFF;
+    border: none;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #23272A;
+    color: #FFFFFF;
+}
+
+button a {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+button a:hover {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+form {
+	width: 100%;
+}
+
+form input {
+	float: left;
+	height: 20px;
+	width: 80%;
+    border: 1px solid #000000;
+}
+
+form label {
+	float: left;
+	width: 20%;
 }
 
 img {
@@ -169,6 +208,9 @@ th {
 		text-align: center;
 	}
 	.leftcolumn, .rightcolumn {
+		padding: 5px 5px 5px 5px;
+	}
+	.leftcontainer, .rightcontainer {
 		padding: 5px 5px 5px 5px;
 	}
 	.card {
