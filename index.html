@@ -31,12 +31,11 @@
 	</nav>
 
 	<div class="row">
+
 		<div class="leftcolumn">
 			<div id="about me" class="card">
 				<h2>About Me</h2>
-				<center>
-					<img height=90% width=90% alt="Failed to load image!" src="./static/images/profile_picture.jpg">
-				</center>
+					<img alt="Failed to load image!" src="./static/images/profile_picture.jpg">
 				<p>
 					I'm 16 years old studying in high school for 2023 GCE AL's <a href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a> <i>~ Respice Finem</i>.
 					<br><br>
@@ -48,45 +47,55 @@
 
 		<div class="rightcolumn">
 			<div id="skill set" class="card">
-				<h2>Skill Set</h2>
-				<table align="center">
-					<tr>
-						<th width="20%">Language</th>
-						<th width="15%">Level</th>
-						<th width="65%">Extra</th>
-					</tr>
+				<row class="row">
+
+					<div class="leftcolumn">
+						<h2>Skill Set</h2>
+						<p align="center">
+							These are my skills, what I'm good and bad at. Please note that this is work in progress.
+						</p>
+						<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&hide_title=true&border_color=ADADAD">
+					</div>
+
+					<table class="rightcolumn">
 						<tr>
-						<td>Python</td>
-						<td>Experienced</td>
-						<td>This is my strongest language now. I have been coding discord bots, several computer applications with python. Good with discord.py, pymongo, PyQt & more.</td>
-					</tr>
-					<tr>
-						<td>Server Management</td>
-						<td>Intermediate</td>
-						<td>Have experience with handling Linux servers, SSH, FTP & Process management.</td>
-					</tr>
-					</tr>
+							<th width="20%">Language</th>
+							<th width="15%">Level</th>
+							<th width="65%">Extra</th>
+						</tr>
+							<tr>
+							<td>Python</td>
+							<td>Experienced</td>
+							<td>This is my strongest language now. I have been coding discord bots, several computer applications with python. Good with discord.py, pymongo, PyQt & more.</td>
+						</tr>
 						<tr>
-						<td>Databases</td>
-						<td>Intermediate</td>
-						<td>So far I've worked with mongo db and PostgreSQL.</td>
-					</tr>
-					<tr>
-						<td>HTML</td>
-						<td>Intermediate</td>
-						<td>Wouldn't exacty call a language but meh.</td>
-					</tr>
-					<tr>
-						<td>CSS</td>
-						<td>Intermediate</td>
-						<td>Learning CSS along with HTML & Javascript.</td>
-					</tr>
-					<tr>
-						<td>Javascript</td>
-						<td>Beginner</td>
-						<td>Just started with basic application of javascript onto websites.</td>
-					</tr>
-				</table>
+							<td>Server Management</td>
+							<td>Intermediate</td>
+							<td>Have experience with handling Linux servers, SSH, FTP & Process management.</td>
+						</tr>
+						</tr>
+							<tr>
+							<td>Databases</td>
+							<td>Intermediate</td>
+							<td>So far I've worked with mongo db and PostgreSQL.</td>
+						</tr>
+						<tr>
+							<td>HTML</td>
+							<td>Intermediate</td>
+							<td>Wouldn't exacty call a language but meh.</td>
+						</tr>
+						<tr>
+							<td>CSS</td>
+							<td>Intermediate</td>
+							<td>Learning CSS along with HTML & Javascript.</td>
+						</tr>
+						<tr>
+							<td>Javascript</td>
+							<td>Beginner</td>
+							<td>Just started with basic application of javascript onto websites.</td>
+						</tr>
+					</table>
+				</row>
 			</div>
 			<div id="projects" class="card">
 				<h2>Projects</h2>
@@ -130,6 +139,11 @@
 			This website was built by @Yas_!_ru, with HTML and CSS & hosted on Github pages.
 		</p>
 	</div>
+
+	<script src="https://kit.fontawesome.com/c89aa4f49d.js" crossorigin="anonymous"></script>
+	<button onclick="toTop()" id="totopbutton" class="totopbutton">🔝</button>
+	<script src="./static/scripts/index.js"></script>
+
 
 	</body>
 </html>
