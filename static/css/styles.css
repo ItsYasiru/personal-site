@@ -192,31 +192,38 @@ th {
     padding: 20px 0 20px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
+	body {
+		text-align: center;
+	}
+	img {
+		max-height: 300px;
+		max-width: 300px;
+	}
+	.row {
+		padding: 10px;
+	}
 	.row .leftColumn, .row .rightColumn {
 		width: 100%;
 	}
 	.card .leftContainer, .card .rightContainer {
 		width: 100%;
 	}
-}
-
-@media screen and (max-width: 400px) {
-	body {
-		text-align: center;
-	}
 	.row .leftColumn, .row .rightColumn {
-		padding: 5px 5px 5px 5px;
+		padding: 5px;
 	}
-	.card .leftContainer, .rightContainer {
-		padding: 5px 5px 5px 5px;
+	.card .leftContainer, .card .rightContainer {
+		padding: 5px;
 	}
 	.row .leftColumn, .card .leftContainer {
 		padding-bottom: 25px;
 	}
 	.card {
-		padding: 10px 10px 10px 10px;
+		padding: 10px;
 	}
+}
+
+@media screen and (max-width: 745px) {
 	.navbar a {
 		width: 100%;
 	}
