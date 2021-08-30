@@ -6,85 +6,90 @@ body {
 	font-family: Arial;
 	background: #f1f1f1;
 	margin: 0;
+	background:
+		repeating-linear-gradient(
+			45deg,
+			#FFFFFF,
+			#f1f1f1 10px,
+			#ADADAD 10px,
+			#ADADAD 20px
+		)
+	;
 }
 
-.header {
+header {
     background-color: #23272A;
     color: #FFFFFF;
     padding: 30px;
     text-align: center;
 }
 
-.header h1 {
+header h1 {
 	font-size: 45px;
 }
 
-.navbar {
+nav {
     background: #212121;
     overflow: hidden;
 }
 
-.navbar a {
+nav a {
     color: #FFFFFF;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
-	transition: background-color 0.5s;
-	transition: color 0.5s;
 }
 
-.navbar a.left {
+nav a.left {
     float: left;
 }
 
-.navbar a.right {
+nav a.right {
     float: right;
 }
 
-.navbar a:hover {
+nav a:hover {
 	text-decoration: none;
     background-color: #00FFFF;
     color: #000000;
 }
 
-.row {
-	padding: 5px 5px 5px 5px;
+row {
 	width: 100%;
 }
 
-.row:after {
+row:after {
 	clear: both;
 	content: "";
 	display: table;
 }
 
-.row .leftColumn {
+row .leftColumn {
+	padding-left: 20px;
 	float: left;
-	height: 100%;
-	padding: 0px 10px 0px 20px;
 	width: 25%;
 }
 
-.row .rightColumn {
+row .rightColumn {
+	padding-left: 20px;
+	padding-right: 20px;
 	float: left;
-	height: 100%;
-	padding: 0px 20px 0px 10px;
 	width: 75%;
 }
 
-.footer {
-	background: #DDDDDD;
+footer {
+	background:#DDDDDD;
 	margin-top: 20px;
 	padding: 10px;
 	text-align: center;
 }
 
 .card {
-	background-color: white;
+	background:rgba(255, 255, 255, 80%);
 	border: 1px solid #ADADAD;
-	margin: 20px 0px 20px 0px;
-	padding: 20px 20px 20px 20px;
-    border-radius: 5px 5px 5px 5px;
+	margin-top: 20px;
+	padding: 20px;
+    border-radius: 5px;
 	width: 100%;
 }
 
@@ -102,22 +107,18 @@ body {
 
 .card .rightContainer {
 	float: left;
-	padding-left: 10px;
 	width: 75%;
 }
 
-.socialIcon {
+ion-icon {
+	height: 30px;
+	width: 30px;
 	color: #ADADAD;
 	transition: color 0.2s;
 	margin: 0 5px;
 }
 
-.socialIcon ion-icon {
-	height: 30px;
-	width: 30px;
-}
-
-.socialIcon:hover {
+ion-icon:hover {
 	color: #23272A;
 }
 
@@ -165,11 +166,11 @@ form label {
 }
 
 img {
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
 
 p {
-	padding: 15px 15px 15px 15px;
+	padding: 15px;
 }
 
 h1, h2 {
@@ -177,18 +178,21 @@ h1, h2 {
 }
 
 table {
+	background-color: #FFFFFF;
     border-collapse: collapse;
-	padding: 5px 5px 5px 5px;
+	padding: 5px ;
+}
+
+th {
+    background-color: #ADADAD;
+    border: 1px solid #000000;
+    color: #23272A;
+    padding: 20px 0;
 }
 
 td {
     border: 1px solid #ADADAD;
-    padding: 10px 10px 10px 10px;
-}
-
-tr {
-	transition: background-color 0.5s;
-	transition: color 0.5s;
+    padding: 10px;
 }
 
 tr:hover {
@@ -197,8 +201,6 @@ tr:hover {
 }
 
 a {
-	transition: background-color 0.5s;
-	transition: color 0.5s;
     color: #000000;
     text-decoration: none;
 }
@@ -211,12 +213,7 @@ tr:hover a {
     color: #FFFFFF;
 }
 
-th {
-    background-color: #ADADAD;
-    border: 1px solid #000000;
-    color: #23272A;
-    padding: 20px 0 20px 0;
-}
+
 
 @media screen and (max-width: 950px) {
 	body {
@@ -226,22 +223,19 @@ th {
 		max-height: 300px;
 		max-width: 300px;
 	}
-	.row {
-		padding: 10px;
-	}
-	.row .leftColumn, .row .rightColumn {
+	row .leftColumn, row .rightColumn {
 		width: 100%;
 	}
 	.card .leftContainer, .card .rightContainer {
 		width: 100%;
 	}
-	.row .leftColumn, .row .rightColumn {
-		padding: 5px;
+	row .leftColumn, row .rightColumn {
+		padding: 0px 30px 0px 30px;
 	}
 	.card .leftContainer, .card .rightContainer {
-		padding: 5px;
+		padding: 0px 30px 0px 30px;
 	}
-	.row .leftColumn, .card .leftContainer {
+	row .leftColumn, .card .leftContainer {
 		padding-bottom: 25px;
 	}
 	.card {
@@ -250,7 +244,16 @@ th {
 }
 
 @media screen and (max-width: 745px) {
-	.navbar a {
+	nav a {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	row .leftColumn, row .rightColumn {
+		padding: 5px;
+	}
+	.card .leftContainer, .card .rightContainer {
+		padding: 5px;
 	}
 }
