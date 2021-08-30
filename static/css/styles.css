@@ -101,7 +101,7 @@ footer {
 	width: 75%;
 }
 
-ion-icon {
+.socialIcon ion-icon {
 	height: 30px;
 	width: 30px;
 	color: #ADADAD;
@@ -109,19 +109,20 @@ ion-icon {
 	margin: 0 5px;
 }
 
-ion-icon:hover {
+.socialIcon ion-icon:hover {
 	color: #23272A;
 }
 
 .icon {
-	filter: grayscale();
+	height: 30px;
+	width: 30px;
+	color: #ADADAD;
 	margin: 0 5px;
 }
 
 button {
 	background: #F1F1F1;
 	color: #000000;
-    border: none;
 	font-size: 15px;
 	padding: 10px;
 	border: 1px solid #ADADAD;
