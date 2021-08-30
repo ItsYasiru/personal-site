@@ -29,6 +29,8 @@ body {
     padding: 15px 20px 15px 20px;
     text-align: center;
     text-decoration: none;
+	transition: background-color 0.5s;
+	transition: color 0.5s;
 }
 
 .navbar a.left {
@@ -104,6 +106,21 @@ body {
 	width: 75%;
 }
 
+.socialIcon {
+	color: #ADADAD;
+	transition: color 0.2s;
+	margin: 0 5px;
+}
+
+.socialIcon ion-icon {
+	height: 30px;
+	width: 30px;
+}
+
+.socialIcon:hover {
+	color: #23272A;
+}
+
 button {
 	background-color: #23272A;
 	color: #FFFFFF;
@@ -111,6 +128,8 @@ button {
 	font-size: 15px;
 	padding: 10px;
 	border-radius: 5px;
+	transition: background-color 0.5s;
+	transition: color 0.5s;
 }
 
 button:hover {
@@ -167,12 +186,19 @@ td {
     padding: 10px 10px 10px 10px;
 }
 
+tr {
+	transition: background-color 0.5s;
+	transition: color 0.5s;
+}
+
 tr:hover {
     background-color: #23272A;
     color: #FFFFFF;
 }
 
 a {
+	transition: background-color 0.5s;
+	transition: color 0.5s;
     color: #000000;
     text-decoration: none;
 }
