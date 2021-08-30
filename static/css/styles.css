@@ -194,6 +194,7 @@ h2 {
 }
 
 table {
+	background-color: #FFFFFF;
     border-collapse: collapse;
 	padding: 5px ;
 }
