@@ -27,6 +27,7 @@ header h1 {
 
 nav {
 	margin: 15px 20px;
+	margin-bottom: 0;
     overflow: hidden;
     background: #212121;
 	border-radius: 5px;
@@ -79,16 +80,15 @@ row .rightColumn {
 footer {
 	border: 1px solid #ADADAD;
 	padding: 10px;
+	margin-top: 20px;
 	background:#DDDDDD;
-	margin: 15px 20px;
 	text-align: center;
-	border-radius: 5px;
 }
 
 .card {
 	width: 100%;
 	border: 1px solid #ADADAD;
-	margin-top: 10px;
+	margin-top: 20px;
 	padding: 20px;
     border-radius: 5px;
 	background-color: #FFFFFF;
