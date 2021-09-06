@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -92,7 +93,7 @@ footer {
 
 .card:target {
 	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
-	border: 1px solid #23272A;
+	border: 1px solid #ADADAD;
 }
 
 .card:after {
@@ -167,23 +168,6 @@ button a {
 button a:hover {
 	color: #FFFFFF;
     text-decoration: none;
-}
-
-form {
-	display: none;
-	width: 100%;
-}
-
-form input {
-	float: left;
-	width: 80%;
-    border: 1px solid #000000;
-	border-radius: 2px;
-}
-
-form label {
-	float: left;
-	width: 20%;
 }
 
 img {
