@@ -1,14 +1,13 @@
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	scrollbar-width: none;
 }
 
 body {
-	font-family: Arial;
-	background: #f1f1f1;
+	font-family: "Helvetica";
 	margin: 0;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+	background-color: #F1F1F1;
 }
 
 ::-webkit-scrollbar {
@@ -16,10 +15,10 @@ body {
 }
 
 header {
-    background-color: #23272A;
     color: #FFFFFF;
     padding: 30px;
     text-align: center;
+    background-color: #212121;
 }
 
 header h1 {
@@ -27,15 +26,24 @@ header h1 {
 }
 
 nav {
-    background: #212121;
+	margin: 15px 20px;
     overflow: hidden;
+    background: #212121;
+	border-radius: 5px;
 }
 
 nav a {
+	margin: 5px;
     color: #FFFFFF;
-    padding: 15px 20px;
+    padding: 10px 15px;
     text-align: center;
-    text-decoration: none;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	color: #212121;
+	text-decoration: none;
+	background-color: #F1F1F1;
 }
 
 nav a.left {
@@ -44,12 +52,6 @@ nav a.left {
 
 nav a.right {
     float: right;
-}
-
-nav a:hover {
-	text-decoration: none;
-    background-color: #00FFFF;
-    color: #000000;
 }
 
 row {
@@ -63,37 +65,38 @@ row:after {
 }
 
 row .leftColumn {
-	padding-left: 20px;
-	float: left;
 	width: 25%;
+	float: left;
+	padding-left: 20px;
 }
 
 row .rightColumn {
-	padding-left: 20px;
-	padding-right: 20px;
-	float: left;
 	width: 75%;
+	float: left;
+	padding: 0 20px;
 }
 
 footer {
-	background:#DDDDDD;
-	margin-top: 20px;
+	border: 1px solid #ADADAD;
 	padding: 10px;
+	background:#DDDDDD;
+	margin: 15px 20px;
 	text-align: center;
+	border-radius: 5px;
 }
 
 .card {
-	background: #FFFFFF;
+	width: 100%;
 	border: 1px solid #ADADAD;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding: 20px;
     border-radius: 5px;
-	width: 100%;
+	background-color: #FFFFFF;
 }
 
 .card:target {
-	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
 	border: 1px solid #ADADAD;
+	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
 }
 
 .card:after {
@@ -103,23 +106,23 @@ footer {
 }
 
 .card .leftContainer {
+	width: 25%;
 	float: left;
 	padding-right: 20px;
-	width: 25%;
 }
 
 .card .rightContainer {
-	float: left;
 	width: 75%;
+	float: left;
 }
 
 .contactIcon ion-icon {
-	height: 30px;
-	width: 30px;
 	color: #ADADAD;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
 	transition: color 0.2s;
 	padding-top: 5px;
-	margin: 0 5px;
 }
 
 .contactIcon ion-icon:hover {
@@ -127,9 +130,9 @@ footer {
 }
 
 .icon {
-	height: 30px;
-	width: 30px;
 	color: #ADADAD;
+	width: 30px;
+	height: 30px;
 	margin: 0 5px;
 }
 
@@ -139,25 +142,25 @@ footer {
 }
 
 .contactBox:target {
-	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
 	border: 1px solid #DDDDDD;
+	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
 	border-radius: 5px;
 }
 
 button {
-	background: #F1F1F1;
 	color: #000000;
-	font-size: 15px;
-	padding: 10px;
 	border: 1px solid #ADADAD;
-	border-radius: 5px;
+	padding: 10px;
+	font-size: 15px;
+	background: #F1F1F1;
 	transition: background-color 0.5s;
 	transition: color 0.5s;
+	border-radius: 5px;
 }
 
 button:hover {
-	background-color: #DDDDDD;
     color: #FFFFFF;
+	background-color: #DDDDDD;
 }
 
 button a {
@@ -179,31 +182,30 @@ p {
 }
 
 h2 {
-	color: #23272A;
 	text-align: center;
 }
 
 table {
-	background-color: #FFFFFF;
-    border-collapse: collapse;
 	padding: 5px ;
+    border-collapse: collapse;
+	background-color: #FFFFFF;
 }
 
 th {
+    padding: 20px 0;
+    color: #23272A;
     background-color: #ADADAD;
     border: 1px solid #000000;
-    color: #23272A;
-    padding: 20px 0;
 }
 
 td {
-    border: 1px solid #ADADAD;
     padding: 10px;
+    border: 1px solid #ADADAD;
 }
 
 tr:hover {
-    background-color: #23272A;
     color: #FFFFFF;
+    background-color: #23272A;
 }
 
 a {
@@ -225,9 +227,12 @@ tr:hover a {
 	body {
 		text-align: center;
 	}
+	footer, nav {
+		margin: 30px;
+	}
 	img {
-		max-height: 300px;
 		max-width: 300px;
+		max-height: 300px;
 	}
 	row .leftColumn, row .rightColumn {
 		width: 100%;
@@ -250,14 +255,17 @@ tr:hover a {
 }
 
 @media screen and (max-width: 745px) {
-	nav a {
-		width: 100%;
+	nav {
+		display: none;
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
+	footer {
+		margin: 15px;
+	}
 	row .leftColumn, row .rightColumn {
-		padding: 5px;
+		padding: 15px;
 	}
 	.card .leftContainer, .card .rightContainer {
 		padding: 5px;
