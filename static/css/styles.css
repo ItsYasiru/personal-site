@@ -181,12 +181,12 @@ button:hover {
 }
 
 button a {
-	color: #FFFFFF;
+	color: inherit;
     text-decoration: none;
 }
 
 button a:hover {
-	color: #FFFFFF;
+	color: inherit;
     text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ tr:hover {
 }
 
 a {
-    color: #000000;
+    color: inherit;
     text-decoration: none;
 }
 
