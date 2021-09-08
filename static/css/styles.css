@@ -36,6 +36,7 @@ nav {
 nav a {
 	margin: 5px;
     color: #FFFFFF;
+	display: block;
     padding: 10px 15px;
     text-align: center;
 	border-radius: 5px;
@@ -147,6 +148,22 @@ footer {
 	border-radius: 5px;
 }
 
+#toTopButton {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 100;
+	border: none;
+	outline: none;
+	background-color: #212121;
+	color: #FFFFFF;
+}
+
+#toTopButton:hover {
+	background-color: #555555;
+}
+
 button {
 	color: #000000;
 	border: 1px solid #ADADAD;
@@ -221,13 +238,11 @@ tr:hover a {
     color: #FFFFFF;
 }
 
-
-
 @media screen and (max-width: 950px) {
 	body {
 		text-align: center;
 	}
-	footer, nav {
+	nav {
 		margin: 30px;
 	}
 	img {
@@ -261,9 +276,6 @@ tr:hover a {
 }
 
 @media screen and (max-width: 550px) {
-	footer {
-		margin: 15px;
-	}
 	row .leftColumn, row .rightColumn {
 		padding: 15px;
 	}
