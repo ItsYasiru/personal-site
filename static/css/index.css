@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: "Helvetica";
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	background-color: #F1F1F1;
 }
@@ -79,6 +79,7 @@ row .rightColumn {
 }
 
 footer {
+	width: 100%;
 	border: 1px solid #ADADAD;
 	padding: 10px;
 	margin-top: 20px;
