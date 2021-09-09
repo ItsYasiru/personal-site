@@ -19,7 +19,7 @@ function loadArticles() {
     var contentBar = document.getElementById("contentBar");
     var inner = "<h2>Articles</h2>";
 
-    openFile("/static/data/articles.json", function(text) {
+    openFile("/ItsYasiru/static/data/articles.json", function(text) {
         var data = JSON.parse(text);
         for (const [key, value] of Object.entries(data)) {
             inner += `<a onclick="loadArticle(${value["id"]})">${key}</a>`;
@@ -32,7 +32,7 @@ function loadArticle(id) {
     var article = document.getElementById("article");
     var inner = "";
 
-    openFile("/static/data/articles.json", function(text) {
+    openFile("/ItsYasiru/static/data/articles.json", function(text) {
         var path;
         var data = JSON.parse(text);
 
@@ -43,7 +43,7 @@ function loadArticle(id) {
             }
         }
 
-        openFile(`/static/articles/${path}/content.txt`, function(text) {
+        openFile(`/ItsYasiru/static/articles/${path}/content.txt`, function(text) {
             article.innerHTML += `${text}`
         });
         article.innerHTML = inner;
