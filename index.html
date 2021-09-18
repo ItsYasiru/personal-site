@@ -7,12 +7,12 @@
 
 	<meta name="theme-color" content="#00FFFF">
 	<meta property="og:title" content="Yas_!_ru's Website">
-	<meta property="og:image" content="./static/images/favicon.png">
+	<meta property="og:image" content="/images/favicon.png">
 
 	<title>Yas_!_ru's Website</title>
 
-	<link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="./static/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDCFQGQZB8"></script>
@@ -26,17 +26,23 @@
 </head>
 
 <body>
+	<button onclick="openMenu()" id="menu-open-btn" class="right">
+		<div></div>
+		<div></div>
+		<div></div>
+	</button>
 	<header>
-		<h1>Yas_!_ru's website</h1>
+		<h1>Yas_!_ru's Website</h1>
 		<p id="lable">My name is Yasiru and I like to code as a hobby.</p>
 	</header>
 
-	<nav>
+	<nav id="menu">
+		<button id="menu-close-btn" onclick="closeMenu()">&times;</button>
+
 		<a class="left" href="#about-me">About me</a>
 		<a class="left" href="#skill-set">Skill set</a>
 		<a class="left" href="#projects">Projects</a>
 		<a class="left" href="#fiverr">Fiverr</a>
-		<a class="left" href="./blog.html">Blog</a>
 
 		<a class="right" href="#contact-info">Contact</a>
 	</nav>
@@ -45,22 +51,22 @@
 		<div class="leftColumn">
 			<div id="about-me" class="card">
 				<h2>About Me</h2>
-				<center><img width=90% height=90% alt="Failed to load image!" src="./static/images/profile-picture.jpg"></center>
+				<center><img width=90% height=90% alt="Failed to load image!" src="/images/profile-picture.jpg"></center>
 				<p>
 					I'm 16 years old studying in high school for my 2023 GCE AL's at <a title="Respice Finem" href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a>.
 					<br><br>
 					I got into programming when the pandemic lockdown began in 2020 April, when a dev introduced javascript, who later suggested learning python and javascript.
 					<br><br>
-					Since then I've been coding a lot in both languages and many other languages, frameworks. <wbr>I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
+					Since then I've been coding a lot in both languages and many other languages, frameworks. I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
 					<br><br>
 					Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project. My ambition is to become a full-stack dev one day.
 				</p>
 
 				<div title="Contact Info" id="contact-info" class="contactBox" align="center">
-					<a class="contactIcon" href="mailto:mwmykd@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-					<a class="contactIcon" href="discord:https://discord.com/users/837258955415748639"><ion-icon name="logo-discord"></ion-icon></a>
-					<a class="contactIcon" target="_blank" href="https://github.com/ItsYasiru"><ion-icon name="logo-octocat"></ion-icon></ion-icon></a>
-					<a class="contactIcon" target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1"><ion-icon name="logo-whatsapp"></ion-icon></ion-icon></a>
+					<a class="contact-icon" href="mailto:mwmykd@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+					<a class="contact-icon" href="discord:https://discord.com/users/837258955415748639"><ion-icon name="logo-discord"></ion-icon></a>
+					<a class="contact-icon" target="_blank" href="https://github.com/ItsYasiru"><ion-icon name="logo-octocat"></ion-icon></a>
+					<a class="contact-icon" target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1"><ion-icon name="logo-whatsapp"></ion-icon></a>
 				</div>
 			</div>
 		</div>
@@ -72,14 +78,14 @@
 					<p align="center">
 						These are my skills, what I'm good and bad at. Please note that this is work in progress.
 					</p>
-					<img title="Languages I've worked with ~ Github statistics" width=100% height=100% src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&hide_title=true&border_color=ADADAD&layout=compact">
+					<img title="Languages I've worked with ~ Github statistics" width=100% height=100% src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&hide_title=true&layout=compact&hide_border=true">
 					<br><br>
 					<div align="center">
-						<img class="icon" src="./static/icons/visual-studio-code.png">
-						<img class="icon" src="./static/icons/python.png">
-						<img class="icon" src="./static/icons/javascript.png">
-						<img class="icon" src="./static/icons/css.png">
-						<img class="icon" src="./static/icons/html.png">
+						<img class="icon" src="/icons/visual-studio-code.png">
+						<img class="icon" src="/icons/python.png">
+						<img class="icon" src="/icons/javascript.png">
+						<img class="icon" src="/icons/css.png">
+						<img class="icon" src="/icons/html.png">
 					</div>
 				</div>
 
@@ -207,13 +213,13 @@
 		</div>
 	</row>
 
-	<button onclick="topFunction()" id="toTopButton" title="Go to top"><ion-icon name="chevron-up-outline"></ion-icon></button>
+	<button onclick="topFunction()" id="to-top-btn" title="Go to top"><ion-icon name="chevron-up-outline"></ion-icon></button>
 
 	<footer>
 		<p>This website was built by @Yas_!_ru with HTML & CSS. Hosted on Github pages.</p>
 	</footer>
 
-	<script src="./static/scripts/index.js"></script>
+	<script src="/scripts/index.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
