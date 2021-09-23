@@ -1,37 +1,52 @@
 * {
 	box-sizing: border-box;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-}
-
-body {
-	margin: 0;
-	background: #F1F1F1;
-	font-family: Arial;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
+html {
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+	max-width: 1500px;
+	background: #F1F1F1;
+}
+
 header {
-    color: #FFFFFF;
-    background: #212121;
     padding: 30px;
     text-align: center;
+    color: #FFFFFF;
+    background: #212121;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 header h1 {
 	font-size: 45px;
+	font-weight: 100;
+	text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+#lable {
+	margin: 0;
+	font-size: 14px;
 }
 
 nav {
-    color: #FFFFFF;
-    background: #212121;
 	margin: 15px 20px;
 	margin-bottom: 0;
     overflow: hidden;
 	border-radius: 5px;
+    color: #FFFFFF;
+    background: #212121;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 nav a {
@@ -43,9 +58,9 @@ nav a {
 }
 
 nav a:hover {
+	text-decoration: none;
 	color: #212121;
 	background: #F1F1F1;
-	text-decoration: none;
 }
 
 .nav-menu {
@@ -80,6 +95,36 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
+#menu-open-btn {
+	margin: 5px;
+	display: none;
+	border: none;
+	background: transparent;
+}
+
+#menu-open-btn:hover {
+	background: none;
+	color: none;
+}
+
+#menu-open-btn div {
+    width: 25px;
+    height: 3px;
+    background: #FFFFFF;
+    margin-top: 4px;
+}
+
+#menu-close-btn {
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+	display: none;
+    color: #FFFFFF;
+    background: transparent;
+}
+
 row {
 	width: 100%;
 }
@@ -90,13 +135,13 @@ row:after {
 	display: table;
 }
 
-row .leftColumn {
+row .left-column {
 	width: 25%;
 	float: left;
 	padding-left: 20px;
 }
 
-row .rightColumn {
+row .right-column  {
 	width: 75%;
 	float: left;
 	padding: 0 20px;
@@ -110,21 +155,32 @@ footer {
 	padding: 10px;
 	margin-top: 20px;
 	text-align: center;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	font-weight: 500;
 }
 
 .card {
-	color: #000000;
-	background: #FFFFFF;
 	width: 100%;
 	border: 1px solid #ADADAD;
 	margin-top: 20px;
 	padding: 20px;
     border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+	color: #000000;
+	background: #FFFFFF;
 }
 
 .card:target {
-	border: 1px solid #ADADAD;
-	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
 }
 
 .card:after {
@@ -175,42 +231,11 @@ footer {
 	border-radius: 5px;
 }
 
-#menu-open-btn {
-	margin: 5px;
-	display: none;
-	border: none;
-	background: transparent;
-}
-
-#menu-open-btn:hover {
-	background: none;
-	color: none;
-}
-
-#menu-open-btn div {
-    width: 25px;
-    height: 3px;
-    background: #FFFFFF;
-    margin-top: 4px;
-}
-
-#menu-close-btn {
-    border: none;
-    background: transparent;
-    color: #FFFFFF;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 30px;
-	display: none;
-}
-
-
 #to-top-btn {
 	display: none;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 10px;
+	right: 10px;
 	z-index: 100;
 	border: none;
 	outline: none;
@@ -224,19 +249,20 @@ footer {
 }
 
 button {
-	color: #000000;
 	border: 1px solid #ADADAD;
 	padding: 10px;
 	font-size: 15px;
-	background: #F1F1F1;
-	transition: background 0.5s;
-	transition: color 0.5s;
+	transition: all 0.5s;
 	border-radius: 5px;
+	color: #000000;
+	background: #F1F1F1;
 }
 
 button:hover {
     color: #FFFFFF;
 	background: #DDDDDD;
+    -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
 
 button a {
@@ -301,6 +327,12 @@ a:hover {
     float: right;
 }
 
+@media screen and (min-width: 1500px) {
+	body {
+		margin: 0 auto;
+	}
+}
+
 @media screen and (max-width: 950px) {
 	body {
 		text-align: center;
@@ -312,19 +344,19 @@ a:hover {
 		max-width: 300px;
 		max-height: 300px;
 	}
-	row .leftColumn, row .rightColumn {
+	row .left-column, row .right-column  {
 		width: 100%;
 	}
 	.card .leftContainer, .card .rightContainer {
 		width: 100%;
 	}
-	row .leftColumn, row .rightColumn {
+	row .left-column, row .right-column  {
 		padding: 0px 30px 0px 30px;
 	}
 	.card .leftContainer, .card .rightContainer {
 		padding: 0px 30px 0px 30px;
 	}
-	row .leftColumn, .card .leftContainer {
+	row .left-column, .card .leftContainer {
 		padding-bottom: 25px;
 	}
 	.card {
@@ -342,13 +374,19 @@ a:hover {
 }
 
 @media screen and (max-width: 550px) {
-	row .leftColumn, row .rightColumn {
+	row .left-column, row .right-column  {
 		padding: 15px;
 	}
 	.card .leftContainer, .card .rightContainer {
 		padding: 5px;
 	}
 	table {
-		font-size: 12px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	body {
+		display: none;
 	}
 }
