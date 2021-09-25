@@ -24,7 +24,7 @@ html {
 body {
 	margin: 0;
 	font-family: "Poppins", Arial, sans-serif;
-	max-width: 1500px;
+	max-width: 1680px;
 	background: #F1F1F1;
 }
 
@@ -98,6 +98,7 @@ nav a:hover {
     color: #FFFFFF;
     display: block;
     transition: 0.3s;
+	text-shadow: none;
 }
 
 .nav-menu a:hover {
@@ -110,6 +111,8 @@ nav a:hover {
 	display: none;
 	border: none;
 	background: transparent;
+    width: 30px;
+	height: 20px;
 }
 
 #menu-open-btn:hover {
@@ -118,7 +121,7 @@ nav a:hover {
 }
 
 #menu-open-btn div {
-    width: 25px;
+    width: 100%;
     height: 3px;
     background: #FFFFFF;
     margin-top: 4px;
@@ -153,21 +156,15 @@ row:after {
 	padding: 20px;
 	margin-top: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
-	color: #000000;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+	color: #212121;
 	background: #FFFFFF;
-}
-
-.card h2 {
-	text-align: center;
-}
-
-.card p {
 	text-align: center;
 }
 
 .card:target {
-    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+	box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    border-color: rgba(33, 33, 33, 0.5);
 }
 
 .card:after {
@@ -178,17 +175,17 @@ row:after {
 
 .card table {
 	padding: 5px ;
+	width: 100%;
     border-collapse: collapse;
 	background: #FFFFFF;
-    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
-	text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
 
 .card table th {
-    padding: 20px 0;
-    color: #23272A;
+    padding: 20px;
+    color: #212121;
     background: #ADADAD;
-    border: 1px solid #000000;
+    border: 1px solid #212121;
 }
 
 .card table td {
@@ -198,54 +195,36 @@ row:after {
 
 .card table tr:hover {
     color: #FFFFFF;
-    background: #23272A;
+    background: #212121;
 }
 
-.contact-icon ion-icon {
-	color: #ADADAD;
-	width: 30px;
-	height: 30px;
-	margin: 0 5px;
-	transition: color 0.2s;
-	padding-top: 5px;
+.card table tr:hover a {
+	text-decoration: underline;
 }
 
-.contact-icon ion-icon:hover {
+.card table .mini-table {
+	color: #212121 !important;
+	font-size: 12px;
+	margin-top: 10px;
+	box-shadow: none;
+	max-width: 400px;
+}
+
+.card table .mini-table th {
+	padding: 7px;
+}
+
+.card table .mini-table td {
+	padding: 5px;
+}
+
+.card table .mini-table tr:hover {
 	color: #212121;
-}
-
-.contactBox {
-	padding: 5px;
-	transition: background 0.5s;
-}
-
-.contactBox:target {
-	border: 1px solid #DDDDDD;
-	background: repeating-linear-gradient(45deg, #FFFFFF, #FFFFFF 10px, #F1F1F1 10px, #F1F1F1 20px);
-	border-radius: 5px;
-}
-
-#to-top-btn {
-	padding: 5px;
-	display: none;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	z-index: 100;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	background: #212121;
-	color: #FFFFFF;
-	opacity: 0.7;
-}
-
-#to-top-btn:hover {
-	opacity: 1;
+	background: #FFFFFF;
 }
 
 footer {
-	color: #000000;
+	color: #212121;
 	background:#DDDDDD;
 	border: 1px solid #ADADAD;
 	padding: 10px;
@@ -280,7 +259,6 @@ a:hover {
 	font-size: 15px;
 	transition: all 0.5s;
 	border-radius: 5px;
-	color: #000000;
 	background: #F1F1F1;
 	cursor: pointer !important;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
@@ -288,13 +266,12 @@ a:hover {
 
 .theme-button:hover {
     color: #FFFFFF;
-	background: #DDDDDD;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
 
 .profile-picture {
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
 
 .icon {
@@ -322,16 +299,36 @@ a:hover {
 	padding-left: 20px;
 }
 
+.no-shadow {
+	box-shadow: none !important;
+}
+
+#contact-info table {
+	max-width: 300px;
+}
+
+#contact-info td {
+	font-size: 14px;
+	padding: 5px;
+}
+
 @media (min-width: 1680px) {
 	body {
 		margin: 0 auto;
 	}
 }
 
-@media (max-width: 992px) {
-	body {
-		text-align: center;
+@media (max-width: 1024px) {
+	.card {
+		font-size: 14px;
 	}
+	#contact-info td {
+		font-size: 11px;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 992px) {
 	img {
 		max-width: 300px;
 		max-height: 300px;
@@ -360,16 +357,50 @@ a:hover {
 	table {
 		font-size: 14px;
 	}
-}
-
-@media (max-width: 375px) {
-	table {
-		font-size: 11px;
+	table .mini-table {
+		font-size: 10px;
 	}
 }
 
-@media (max-width: 300px) {
-	body {
+@media (max-width: 414px) {
+	.card table {
+		font-size: 11px;
+	}
+	.card table td {
+		padding: 5px;
+	}
+	table .mini-table {
 		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	header h1 {
+		font-size: 20px;
+	}
+	header p {
+		font-size: 10px;
+	}
+	.card h2 {
+		font-size: 15px;
+	}
+	.card p {
+		font-size: 10px;
+	}
+	.theme-button {
+		height: 50px;
+		width: 70px;
+	}
+	.theme-button svg {
+		width: 40px;
+	}
+	.card table {
+		font-size: 8px;
+	}
+	.card table td {
+		padding: 5px;
+	}
+	footer {
+		font-size: 8px;
 	}
 }

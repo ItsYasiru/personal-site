@@ -17,9 +17,6 @@
 
 	<!-- Scripts -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDCFQGQZB8"></script>
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 	<script>
 	    window.dataLayer = window.dataLayer || [];
 	    function gtag(){dataLayer.push(arguments);}
@@ -37,11 +34,13 @@
 		<div></div>
 	</button>
 
+	<!-- Header -->
 	<header>
 		<h1>Yas_!_ru's Website</h1>
 		<p id="lable">My name is Yasiru and I like to code as a hobby.</p>
 	</header>
 
+	<!-- Navigation bar -->
 	<nav id="menu">
 		<button id="menu-close-btn" onclick="closeMenu()">&times;</button>
 
@@ -49,11 +48,14 @@
 		<a class="left" href="#skill-set">Skill set</a>
 		<a class="left" href="#projects">Projects</a>
 		<a class="left" href="#fiverr">Fiverr</a>
+		<a class="left" href="#qualifications">Qualifications</a>
 
 		<a class="right" href="#contact-info">Contact</a>
 	</nav>
 
+	<!-- Content -->
 	<row>
+		<!-- Left column -->
 		<div class="left-column">
 			<div id="about-me" class="card">
 				<h2>About Me</h2>
@@ -63,20 +65,42 @@
 					<br><br>
 					I got into programming when the pandemic lockdown began in 2020 April, when a dev introduced javascript, who later suggested learning python and javascript.
 					<br><br>
-					Since then I've been coding a lot in both languages and many other languages, frameworks. I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
+					Since then I've been coding a lot in both languages and many other languages, frameworks.
+					I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
 					<br><br>
-					Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project. My ambition is to become a full-stack dev one day.
+					Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project.
+					My ambition is to become a full-stack dev one day.
 				</p>
+			</div>
 
-				<div title="Contact Info" id="contact-info" class="contactBox" align="center">
-					<a class="contact-icon" href="mailto:mwmykd@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-					<a class="contact-icon" href="discord:https://discord.com/users/837258955415748639"><ion-icon name="logo-discord"></ion-icon></a>
-					<a class="contact-icon" target="_blank" href="https://github.com/ItsYasiru"><ion-icon name="logo-octocat"></ion-icon></a>
-					<a class="contact-icon" target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1"><ion-icon name="logo-whatsapp"></ion-icon></a>
-				</div>
+			<div class="card" id="contact-info">
+				<table align="center" class="no-shadow">
+					<tr title="Email">
+						<td>Email</td>
+						<td><a href="mailto:mwmykd@gmail.com">mwmykd@gmail.com</a></td>
+					</tr>
+					<tr title="Open with discord Yas_!_ru#9999">
+						<td>Discord</td>
+						<td><a href="discord:https://discord.com/users/837258955415748639">Yas_!_ru#9999</a></td>
+					</tr>
+					<tr title="Open with Whatsapp Yas_!_ru">
+						<td>Whatsapp</td>
+						<td><a target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1">+94 71 994 5826</a></td>
+					</tr>
+					<tr title="Github">
+						<td>Github</td>
+						<td><a target="_blank" href="https://github.com/ItsYasiru">ItsYasiru</a></td>
+					</tr>
+					<tr title="Instagram">
+						<td>Instagram</td>
+						<td><a target="_blank" href="https://www.instagram.com/its.yasiru/">Its.Yasiru</a></td>
+					</tr>
+				</table>
 			</div>
 		</div>
+		<!-- End: Left column -->
 
+		<!-- Right column -->
 		<div class="right-column">
 			<div id="skill-set" class="card">
 				<div class="left-column">
@@ -147,7 +171,7 @@
 				<div class="right-column">
 					<table>
 						<tr>
-							<th width="25%">Name</th>
+							<th width="25%">Project</th>
 							<th width="75%">Details</tr>
 						</tr>
 						<tr>
@@ -172,58 +196,126 @@
 				</div>
 			</div>
 
-				<div id="fiverr" class="card">
-					<div class="left-column">
-						<h2>Fiverr</h2>
-							<p>
-								An online market where I provide a few services as a freelancer.
-							</p>
+			<div id="fiverr" class="card">
+				<div class="left-column">
+					<h2>Fiverr</h2>
+						<p>
+							An online market where I provide a few services as a freelancer.
+						</p>
 
-						<center>
-							<a target="_blank" href="https://www.fiverr.com/briefs/new?username=yas_i_ru">
-								<button class="theme-button" title="Check out my Fiverr!">
-									<svg  title="Check out my Fiverr!" width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#404145"><path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path></g><g fill="#1dbf73"><path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path></g></svg>
-								</button>
-							</a>
-						</center>
-					</div>
+					<center>
+						<a target="_blank" href="https://www.fiverr.com/briefs/new?username=yas_i_ru">
+							<button class="theme-button" title="Check out my Fiverr!">
+								<svg  title="Check out my Fiverr!" width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#404145"><path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path></g><g fill="#1dbf73"><path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path></g></svg>
+							</button>
+						</a>
+					</center>
+				</div>
 
-					<div class="right-column">
-						<table>
-							<tr>
-								<th width="20%">Item</th>
-								<th width="80%">Details</th>
-							</tr>
-							<tr>
-								<td>
-									<a title="Click to open in Fiverr" target="_blank" href="https://www.fiverr.com/share/w239aB">A Discord bot</a>
-								</td>
-								<td>
-									I will develop a discord bot to do anything that can be done on discord with a bot, the way you need it to be done.
-									I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a title="Click to open in Fiverr" target="_blank" href="https://www.fiverr.com/share/NEoQvp">A stunning Website</a>
-								</td>
-								<td>
-									I will design and build you a beautiful website that will look good on Tablets, Computers & Mobile devices.
-									I will revise and rework it till you are 100% satisfied.
-									I ensure you that the final product will look and function just the way you want it to.
-								</th>
-							</tr>
-						</table>
-					</div>
+				<div class="right-column">
+					<table>
+						<tr>
+							<th width="20%">Service</th>
+							<th width="80%">Details</th>
+						</tr>
+						<tr>
+							<td>
+								<a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/w239aB">A Discord bot</a>
+							</td>
+							<td>
+								I will develop a discord bot to do anything that can be done on discord with a bot, the way you need it to be done.
+								I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/NEoQvp">A stunning Website</a>
+							</td>
+							<td>
+								I will design and build you a beautiful website that will look good on Tablets, Computers & Mobile devices.
+								I will revise and rework it till you are 100% satisfied.
+								I ensure you that the final product will look and function just the way you want it to.
+							</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="qualifications" class="card">
+				<div class="left-column">
+					<h2>Qualifications</h2>
+					<p>Qualifications I've gathered so far troughout my career.</p>
+				</div>
+				<div class="right-column">
+					<table>
+						<tr>
+							<th width="20%">Qualification</th>
+							<th width="80%">Details</th>
+						</tr>
+						<tr>
+							<td>GCE OL 2020</td>
+							<td>
+								Acquired 4A passes, 3B passes and 1C pass in English medium; Qualifying to write GCE ALs in 2023.
+								<table align="center" class="mini-table">
+									<tr>
+										<th>Subject</th>
+										<th>Grade</th>
+									</tr>
+									<tr>
+										<td>Info. & Comm. Technology</td>
+										<td>A</td>
+									</tr>
+									<tr>
+										<td>Science</td>
+										<td>A</td>
+									</tr>
+									<tr>
+										<td>History</td>
+										<td>A</td>
+									</tr>
+									<tr>
+										<td>English</td>
+										<td>A</td>
+									</tr>
+									<tr>
+										<td>Geography</td>
+										<td>B</td>
+									</tr>
+									<tr>
+										<td>Mathematics</td>
+										<td>B</td>
+									</tr>
+									<tr>
+										<td>Sinhala</td>
+										<td>B</td>
+									</tr>
+									<tr>
+										<td>Buddhism</td>
+										<td>C</td>
+									</tr>
+									<tr>
+										<td>Drama & Theatre</td>
+										<td>-</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>GCE AL 2023</td>
+							<td>-</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
+		<!-- End: Right column -->
 	</row>
 
 	<footer>
 		<p>This website was built by Yas_!_ru with HTML, JavaScript & CSS. Hosted on Github pages.</p>
 	</footer>
 
+	<!-- Scripts -->
 	<script src="./scripts/index.js"></script>
 </body>
 </html>
