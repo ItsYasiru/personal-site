@@ -10,6 +10,7 @@
 
 * {
 	box-sizing: border-box;
+	user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -204,10 +205,11 @@ row:after {
 
 .card table .mini-table {
 	color: #212121 !important;
-	font-size: 12px;
-	margin-top: 10px;
+	font-size: 11px;
+	margin: 10px 0;
 	box-shadow: none;
 	max-width: 400px;
+	text-align: center;
 }
 
 .card table .mini-table th {
@@ -249,6 +251,10 @@ a {
     text-decoration: none;
 }
 
+a[href^="http"]:empty::before {
+	content: attr(href);
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -262,10 +268,10 @@ a:hover {
 	background: #F1F1F1;
 	cursor: pointer !important;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+	font-family: "Poppins", Arial, sans-serif;
 }
 
 .theme-button:hover {
-    color: #FFFFFF;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
 
@@ -303,6 +309,11 @@ a:hover {
 	box-shadow: none !important;
 }
 
+.no-hover-effect:hover {
+	color: #212121 !important;
+	background-color: #FFFFFF !important;
+}
+
 #contact-info table {
 	max-width: 300px;
 }
@@ -310,6 +321,10 @@ a:hover {
 #contact-info td {
 	font-size: 14px;
 	padding: 5px;
+}
+
+#contact-info tr {
+	border-left: 5px solid #ADADAD;
 }
 
 @media (min-width: 1680px) {
