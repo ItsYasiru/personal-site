@@ -79,7 +79,7 @@
 			<div class="card" id="contact-info">
 				<h2>Get in touch</h2>
 
-				<table no-shadow>
+				<table no-shadow class="center">
 					<tr title="Email">
 						<td>Email</td>
 						<td><a href="mailto:mwmykd@gmail.com">mwmykd@gmail.com</a></td>
@@ -324,7 +324,12 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+			disable: function() {
+				var maxWidth = 992;
+				return window.innerWidth < maxWidth;
+			}
+		});
     </script>
 	<script src="./scripts/index.js"></script>
 </body>
