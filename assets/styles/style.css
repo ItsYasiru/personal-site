@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', 'Arial', 'sans-serif';
+  color: #212121;
+  background: #F1F1F1;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  background: #212121;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin: 5px 0;
+  font-size: 45px;
+  font-weight: 700;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header p {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header p i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+nav {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212121;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #212121;
+  background: #DDDDDD;
+  border: 1px solid #ADADAD;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  cursor: pointer !important;
+}
+
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+
+label {
+  cursor: pointer !important;
+}
+
+.nav-button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #212121;
+  background: #FFFFFF;
+}
+
+.lgt-card {
+  margin-top: 20px;
+  border: 1px solid #ADADAD;
+  border-radius: 5px;
+  padding: 15px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lgt-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.lgt-card p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lgt-card p[text-align^="left"] {
+  text-align: left !important;
+}
+
+.lgt-card p[text-align^="center"] {
+  text-align: center !important;
+}
+
+.lgt-card p[text-align^="right"] {
+  text-align: right !important;
+}
+
+.lgt-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  background: #FFFFFF;
+}
+
+.lgt-table[center-col^="1"] td:nth-child(1) {
+  text-align: center;
+}
+
+.lgt-table[center-col^="2"] td:nth-child(1), .lgt-table[center-col^="2"] td:nth-child(2) {
+  text-align: center;
+}
+
+.lgt-table th {
+  padding: 10px 15px;
+  border: 1px solid #212121;
+  text-align: center;
+  color: #212121;
+  background: #ADADAD;
+}
+
+.lgt-table td {
+  padding: 10px;
+  border: 1px solid #ADADAD;
+}
+
+.lgt-table tr {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.lgt-table tr:hover {
+  color: #FFFFFF;
+  background: #212121;
+}
+
+.lgt-table tr a {
+  text-decoration: underline;
+}
+
+.socials-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials-bar a {
+  width: 300px;
+  margin: 5px auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  text-decoration: none;
+  color: #212121;
+  background: #F1F1F1;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ADADAD;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.socials-bar a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.socials-bar a i {
+  margin-right: 10px;
+}
+
+.socials-bar a label {
+  width: 100%;
+  text-align: center;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.left-column {
+  padding: 0 10px;
+  padding-left: 0;
+}
+
+.right-column {
+  padding: 0 10px;
+  padding-right: 0;
+}
+
+.profile-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.no-hover-effect {
+  color: #212121 !important;
+  background-color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .left-column {
+    padding: 10px;
+  }
+  .right-column {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 12px;
+  }
+  header p i {
+    font-size: 10px;
+  }
+  .lgt-table {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

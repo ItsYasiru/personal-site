@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Metadata -->
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height" />
-	<meta name="theme-color" content="#00FFFF">
-	<meta property="og:title" content="Yas_!_ru's Website" />
-	<meta property="og:image" content="./images/favicon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Yas_!_ru's Website</title>
+    <title>Yas_!_ru's Website</title>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
 
-	<!-- Favicons -->
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
 
 	<!-- Scripts -->
+    <script src="https://kit.fontawesome.com/c89aa4f49d.js" crossorigin="anonymous"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDCFQGQZB8"></script>
 	<script>
 	    window.dataLayer = window.dataLayer || [];
@@ -30,307 +27,255 @@
 </head>
 
 <body>
-	<!-- Mobile nav button -->
-	<button onclick="openMenu()" id="menu-open-btn" class="right">
-		<div></div>
-		<div></div>
-		<div></div>
-	</button>
+    <header>
+        <h1>Yas_!_ru's Website</h1>
+        <p><i class="fas fa-terminal"></i> console.log( "No I'm not gonna fix your printer." );</p>
+    </header>
 
-	<!-- Header -->
-	<header>
-		<h1 data-aos="fade-up">Yas_!_ru's Website</h1>
-		<p data-aos="fade-up" id="lable">My name is Yasiru and I like to code as a hobby.</p>
-	</header>
+    <nav class="container">
+        <div class="left">
+            <a class="nav-button" href="#about-me">About me</a>
+            <a class="nav-button" href="#skill-set">Skill set</a>
+            <a class="nav-button" href="#projects">Projects</a>
+            <a class="nav-button" href="#fiverr">Fiverr</a>
+            <a class="nav-button" href="#qualifications">Qualifications</a>
+        </div>
 
-	<!-- Navigation bar -->
-	<nav data-aos="fade-up" id="menu">
-		<button id="menu-close-btn" onclick="closeMenu()">&times;</button>
+        <div class="right">
+            <a class="nav-button" href="#contact-info">Get in touch</a>
+        </div>
+    </nav>
 
-		<a class="left" href="#about-me">About me</a>
-		<a class="left" href="#skill-set">Skill set</a>
-		<a class="left" href="#projects">Projects</a>
-		<a class="left" href="#fiverr">Fiverr</a>
-		<a class="left" href="#qualifications">Qualifications</a>
+    <div class="container">
+        <div class="row">
+            <div class="left-column col-md-12 col-xl-4">
+                <div id="about-me" class="lgt-card">
+                    <h2>About me</h2>
+                    <div class="profile-pic">
+                        <img src="./assets/images/profile-picture.jpg">
+                    </div>
+                    <p text-align="left">
+                        I'm 16 years old studying in high school for my GCE AL's at <a title="Respice Finem" href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a>.
+                        Got into programming with the pandemic lockdown, after meeting another developer.
+                        Since then I've been coding a lot mostly in python and improving in other languages too.
+                        <br><br>
+                        I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
+                        Currently an intern full stack developer at <a _target="_blank" href="https://www.domedia.lk">DoMedia.lk</a>
+                    </p>
+                </div>
 
-		<a class="right" href="#contact-info">Contact</a>
-	</nav>
+                <div id="contact-info" class="lgt-card">
+                    <h2>Get in touch</h2>
 
-	<!-- Content -->
-	<div class="row">
-		<!-- Left column -->
-		<div data-aos="fade-right" class="left-column">
-			<div id="about-me" class="card">
-				<h2>About Me</h2>
-				<img profile-picture alt="Failed to load image!" src="images/profile-picture.jpg">
-				<p>
-					I'm 16 years old studying in high school for my 2023 GCE AL's at <a title="Respice Finem" href="https://www.trinitycollege.lk" target="_blank">Trinity College Kandy</a>.
-					<br><br>
-					I got into programming when the pandemic lockdown began in 2020 April, when a dev introduced javascript, who later suggested learning python and javascript.
-					<br><br>
-					Since then I've been coding a lot in both languages and many other languages, frameworks.
-					I've learned a lot just by self-studying, reading articles, docs, & talking to everyone that I've met.
-					<br><br>
-					Met <a href="https://github.com/LeoSko" target="_blank">LeoSko</a> who gave me good advice and an opportunity on to my first ever mass scale project.
-					My ambition is to become a full-stack dev one day.
-				</p>
-			</div>
+                    <div class="socials-bar">
+                        <a href="mailto:mwmykd@gmail.com"><i class="fas fa-at"></i><label>mwmykd@gmail.com</label></a>
+                        <a href="discord:https://discord.com/users/837258955415748639"><i class="fab fa-discord"></i><label>Yas_!_ru#9999</label></a>
+                        <a target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1"><i class="fab fa-whatsapp"></i><label>+94 71 994 5826</label></a>
+                        <a target="_blank" href="https://github.com/ItsYasiru"><i class="fab fa-github-alt"></i><label>ItsYasiru</label></a>
+                        <a target="_blank" href="https://www.instagram.com/its.yasiru/"><i class="fab fa-instagram"></i><label>its.yasiru</label></a>
+                    </div>
+                </div>
+            </div>
 
-			<div class="card" id="contact-info">
-				<h2>Get in touch</h2>
+            <div class="right-column col-md-12 col-xl-8">
+                <div id="skill-set" class="lgt-card">
+                    <h2>Skill Set</h2>
+                    <p>
+                        This is my skill set, what I'm good and bad at.
+                        Please note that this is work in progress, still have a lot to learn and cover.
+                    </p>
 
-				<table no-shadow class="center">
-					<tr title="Email">
-						<td>Email</td>
-						<td><a href="mailto:mwmykd@gmail.com">mwmykd@gmail.com</a></td>
-					</tr>
-					<tr title="Open with discord Yas_!_ru#9999">
-						<td>Discord</td>
-						<td><a href="discord:https://discord.com/users/837258955415748639">Yas_!_ru#9999</a></td>
-					</tr>
-					<tr title="Open with Whatsapp Yas_!_ru">
-						<td>Whatsapp</td>
-						<td><a target="_blank" href="https://wa.me/qr/6SNFWKYZ4CYFD1">+94 71 994 5826</a></td>
-					</tr>
-					<tr title="Github">
-						<td>Github</td>
-						<td><a target="_blank" href="https://github.com/ItsYasiru">ItsYasiru</a></td>
-					</tr>
-					<tr title="Instagram">
-						<td>Instagram</td>
-						<td><a target="_blank" href="https://www.instagram.com/its.yasiru/">its.yasiru</a></td>
-					</tr>
-				</table>
-			</div>
-		</div>
+                    <table center-col="2" class="lgt-table">
+                        <tr>
+                            <th width="20%">Language</th>
+                            <th width="15%">Level</th>
+                            <th width="65%">Extra</th>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Expert</td>
+                            <td>
+                                This is the laguage I've used the most.
+                                I have been coding discord bots,
+                                several computer applications & things to fiddle around with.
+                                I've mostly worked with discord.py, pymongo, PyQt, pillow, matplotlib.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CSS & HTML</td>
+                            <td>Expert</td>
+                            <td>
+                                I can build & design good looking static websites.
+                                Familiar with Bootstrap.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Server Management</td>
+                            <td>Intermediate</td>
+                            <td>Have experience with handling Linux servers & Process management.</td>
+                        </tr>
+                        <tr>
+                            <td>Databases</td>
+                            <td>Intermediate</td>
+                            <td>So far I've worked with Mongo db and PostgreSQL.</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>Intermediate</td>
+                            <td>
+                                Currently working on Node.js and Angular.
+                                Familiar with JQuery and few other web development plugins.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>Beginner</td>
+                            <td>Just getting started.</td>
+                        </tr>
+                        <tr>
+                            <td>Wordpress</td>
+                            <td>Beginner</td>
+                            <td>Currently working on theme development.</td>
+                        </tr>
+                    </table>
+                </div>
 
-		<!-- Right column -->
-		<div data-aos="fade-left" class="right-column">
-			<div id="skill-set" class="card">
-				<div class="left-column">
-					<h2>Skill Set</h2>
-					<p>
-						These are my skills, what I'm good and bad at. Please note that this is work in progress.
-					</p>
-					<img title="Languages I've worked with ~ Github statistics" width=100% height=100% src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&hide_title=true&layout=compact&hide_border=true">
-					<br><br>
-					<div>
-						<img icon src="./icons/visual-studio-code.png">
-						<img icon src="./icons/python.png">
-						<img icon src="./icons/javascript.png">
-						<img icon src="./icons/css.png">
-						<img icon src="./icons/html.png">
-					</div>
-				</div>
+                <div id="projects" class="lgt-card">
+                    <h2>Projects</h2>
+                    <p>
+                        Projects that I contribute to/handle.
+                        Looking forward to contribute to Python, JavaScript projects.
+                    </p>
 
-				<div class="right-column">
-					<table>
-						<tr>
-							<th width="20%">Language</th>
-							<th width="15%">Level</th>
-							<th width="65%">Extra</th>
-						</tr>
-						<tr>
-							<td>Python</td>
-							<td>Expert</td>
-							<td>This is my strongest language now. I have been coding discord bots, several computer applications with python. Good with discord.py, pymongo, PyQt & more.</td>
-						</tr>
-						<tr>
-							<td>HTML & CSS</td>
-							<td>Expert</td>
-							<td>I can build websites that will look good on any device or browser.</td>
-						</tr>
-						<tr>
-							<td>Server Management</td>
-							<td>Intermediate</td>
-							<td>Have experience with handling Linux servers, SSH, FTP & Process management.</td>
-						</tr>
-						<tr>
-							<td>Databases</td>
-							<td>Intermediate</td>
-							<td>So far I've worked with Mongo db and PostgreSQL.</td>
-						</tr>
-						<tr>
-							<td>Javascript</td>
-							<td>Intermediate</td>
-							<td>Getting started with Node.js and Angular to build web applications.</td>
-						</tr>
-						<tr>
-							<td>PHP</td>
-							<td>Beginner</td>
-							<td>Just getting started.</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+                    <table center-col="1" class="lgt-table">
+                        <tr>
+                            <th width="25%">Project</th>
+                            <th width="75%">Details</tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://discord.com/invite/Hjr92J7" target="_blank">Mindustry Ranked</a>
+                            </td>
+                            <td>
+                                Developer of "Ranked Bot".
+                                The bot is capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API.
+                                More info <a href="https://ranked.ddns.net" target="_blank"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Line A Photography
+                            </td>
+                            <td>
+                                <a href="https://line-a-photography.netlify.app" target="_blank"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
-			<div id="projects" class="card">
-				<div class="left-column">
-					<h2>Projects</h2>
-					<p>
-						Projects that I contribute to/handle. Looking forward to contribute to Python, JavaScript projects.
-					</p>
-				</div>
+                <div id="fiverr" class="lgt-card">
+                    <h2>Fiverr</h2>
+                    <p>An online market where I provide a few services as a freelancer.</p>
 
-				<div class="right-column">
-					<table>
-						<tr>
-							<th width="25%">Project</th>
-							<th width="75%">Details</tr>
-						</tr>
-						<tr>
-							<td>
-								<a href="https://discord.com/invite/Hjr92J7" target="_blank">Mindustry Ranked</a>
-							</td>
-							<td>
-								Developer of "Ranked Bot".
-								The bot is capable of retrieving aggregated player statistics, match statistics & game replays served by a backend API.
-								More info <a href="https://ranked.ddns.net" target="_blank"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Line A Photography
-							</td>
-							<td>
-								<a href="https://line-a-photography.netlify.app" target="_blank"></a>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+                    <table center-col="1" class="lgt-table"s>
+                        <tr>
+                            <th width="20%">Service</th>
+                            <th width="80%">Details</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/w239aB">A Discord bot</a>
+                            </td>
+                            <td>
+                                I will develop a discord bot to do anything that can be done on discord with a bot, the way you need it to be done.
+                                I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/NEoQvp">A static Website</a>
+                            </td>
+                            <td>
+                                I will design and build you a beautiful website that will look good on Tablets, Computers & Mobile devices.
+                                I will revise and rework it till you are 100% satisfied.
+                                I ensure you that the final product will look and function just the way you want it to.
+                            </th>
+                        </tr>
+                    </table>
+                </div>
 
-			<div id="fiverr" class="card">
-				<div class="left-column">
-					<h2>Fiverr</h2>
-					<p>An online market where I provide a few services as a freelancer.</p>
+                <div id="qualifications" class="lgt-card">
+                    <h2>Qualifications</h2>
+                    <p>Not really much to show here but I'm getting there, qualifications I've gathered so far.</p>
 
-					<a target="_blank" href="https://www.fiverr.com/briefs/new?username=yas_i_ru">
-						<button class="theme-button" title="Check out my Fiverr!">
-							<svg  title="Check out my Fiverr!" width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#404145"><path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path></g><g fill="#1dbf73"><path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path></g></svg>
-						</button>
-					</a>
-				</div>
+                    <table center-col="1" class="lgt-table">
+                        <tr>
+                            <th width="20%">Qualification</th>
+                            <th width="80%">Details</th>
+                        </tr>                        <tr>
+                            <td>GCE OL 2020</td>
+                            <td>
+                                Acquired 4A passes, 3B passes and 1C pass in English medium; Qualifying to write GCE ALs in 2023.
+                            </td>
+                        </tr>
+                        <tr class="no-hover-effect">
+                            <td colspan="2">
+                                <table center-col="2" class="lgt-table">
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Info. & Comm. Technology</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>History</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>English</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geography</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematics</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sinhala</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Buddhism</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drama & Theatre</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GCE AL 2023</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				<div class="right-column">
-					<table>
-						<tr>
-							<th width="20%">Service</th>
-							<th width="80%">Details</th>
-						</tr>
-						<tr>
-							<td>
-								<a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/w239aB">A Discord bot</a>
-							</td>
-							<td>
-								I will develop a discord bot to do anything that can be done on discord with a bot, the way you need it to be done.
-								I can get anything from Giveaways, Moderation, Music, Leveling, Welcome messages, Registration forms, Data queries, Auto roles done for you.
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<a title="Fiverr" target="_blank" href="https://www.fiverr.com/share/NEoQvp">A stunning Website</a>
-							</td>
-							<td>
-								I will design and build you a beautiful website that will look good on Tablets, Computers & Mobile devices.
-								I will revise and rework it till you are 100% satisfied.
-								I ensure you that the final product will look and function just the way you want it to.
-							</th>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-			<div id="qualifications" class="card">
-				<div class="left-column">
-					<h2>Qualifications</h2>
-					<p>Qualifications I've gathered so far troughout my career.</p>
-				</div>
-				<div class="right-column">
-					<table>
-						<tr>
-							<th width="20%">Qualification</th>
-							<th width="80%">Details</th>
-						</tr>
-						<tr>
-							<td>GCE OL 2020</td>
-							<td>
-								Acquired 4A passes, 3B passes and 1C pass in English medium; Qualifying to write GCE ALs in 2023.
-							</td>
-						</tr>
-						<tr no-hover-effect>
-							<td></td>
-							<td>
-								<table class="mini-table center">
-									<tr>
-										<th>Subject</th>
-										<th>Grade</th>
-									</tr>
-									<tr>
-										<td>Info. & Comm. Technology</td>
-										<td>A</td>
-									</tr>
-									<tr>
-										<td>Science</td>
-										<td>A</td>
-									</tr>
-									<tr>
-										<td>History</td>
-										<td>A</td>
-									</tr>
-									<tr>
-										<td>English</td>
-										<td>A</td>
-									</tr>
-									<tr>
-										<td>Geography</td>
-										<td>B</td>
-									</tr>
-									<tr>
-										<td>Mathematics</td>
-										<td>B</td>
-									</tr>
-									<tr>
-										<td>Sinhala</td>
-										<td>B</td>
-									</tr>
-									<tr>
-										<td>Buddhism</td>
-										<td>C</td>
-									</tr>
-									<tr>
-										<td>Drama & Theatre</td>
-										<td>-</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td>GCE AL 2023</td>
-							<td>-</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
-	<footer>
+    <footer>
 		<p>This website was built by Yas_!_ru with HTML, JavaScript & CSS. Hosted on Github pages.</p>
 	</footer>
-
-	<!-- Scripts -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-			disable: function() {
-				var maxWidth = 992;
-				return window.innerWidth < maxWidth;
-			}
-		});
-    </script>
-	<script src="./scripts/index.js"></script>
 </body>
 </html>
