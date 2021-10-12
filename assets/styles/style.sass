@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+
+$BORDER_RADIUS: 5px
+
+*
+	user-select: none
+	box-sizing: border-box
+
+html
+	scrollbar-width: none
+	scroll-behavior: smooth
+
+::-webkit-scrollbar
+	display: none
+
+body
+	margin: 0 auto
+	font-family: 'Poppins', 'Arial', 'sans-serif'
+	color: #212121
+	background: #F1F1F1
+
+header
+	width: 100%
+	height: 200px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	color: #FFFFFF
+	background: #212121
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+	h1
+		margin: 5px 0
+		font-size: 45px
+		font-weight: 700
+		display: inline-block
+		overflow: hidden
+		white-space: nowrap
+	p
+		margin: 5px 0
+		display: flex
+		font-size: 16px
+		align-items: center
+		i
+			margin-right: 10px
+			font-size: 14px
+
+nav
+	margin-top: 20px
+	padding: 10px 20px
+	border-radius: $BORDER_RADIUS
+	display: flex
+	align-items: center
+	background: #212121
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+footer
+	margin-top: 20px
+	text-align: center
+	color: #212121
+	background: #DDDDDD
+	border: 1px solid #ADADAD
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
+	p
+		margin: 0
+		padding: 10px 0
+		font-size: 10px
+		line-height: 10px
+		font-weight: 500
+
+a
+	color: inherit
+	cursor: pointer !important
+	&[href^="http"]:empty::before
+		content: attr(href)
+label
+	cursor: pointer !important
+
+.nav-button
+	padding: 5px 15px
+	border-radius: $BORDER_RADIUS
+	text-decoration: none
+	color: #FFFFFF
+	background: transparent
+	transition: all 0.3s
+	&:hover
+		transform: scale(1.1)
+		color: #212121
+		background: #FFFFFF
+
+.lgt-card
+	margin-top: 20px
+	border: 1px solid #ADADAD
+	border-radius: $BORDER_RADIUS
+	padding: 15px
+	background: #FFFFFF
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+	h2
+		margin-bottom: 10px
+		font-size: 22px
+		text-align: center
+	p
+		margin-bottom: 10px
+		text-align: center
+		&[text-align^="left"]
+			text-align: left !important
+		&[text-align^="center"]
+			text-align: center !important
+		&[text-align^="right"]
+			text-align: right !important
+
+.lgt-table
+	width: 100%
+	text-align: left
+	border-collapse: collapse
+	background: #FFFFFF
+	&[center-col^="1"]
+		td:nth-child(1)
+			text-align: center
+	&[center-col^="2"]
+		td:nth-child(1), td:nth-child(2)
+			text-align: center
+	th
+		padding: 10px 15px
+		border: 1px solid #212121
+		text-align: center
+		color: #212121
+		background: #ADADAD
+	td
+		padding: 10px
+		border: 1px solid #ADADAD
+	tr
+		transition: all 0.3s
+		&:hover
+			color: #FFFFFF
+			background: #212121
+
+		a
+			text-decoration: underline
+
+.socials-bar
+	display: flex
+	flex-direction: column
+	justify-content: center
+	a
+		margin: 5px 15px
+		padding: 5px 15px
+		border-radius: $BORDER_RADIUS
+		display: flex
+		align-items: center
+		font-size: 17px
+		text-decoration: none
+		color: #212121
+		background: #F1F1F1
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+		border: 1px solid #ADADAD
+		transition: all 0.3s
+		&:hover
+			transform: scale(1.03)
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)
+		i
+			margin-right: 10px
+		label
+			width: 100%
+			text-align: center
+
+.left
+	margin-right: auto
+
+.right
+	margin-left: auto
+
+.center
+	text-align: center
+
+.left-column
+	padding: 0 10px
+	padding-left: 0
+
+.right-column
+	padding: 0 10px
+	padding-right: 0
+
+.profile-pic
+	width: 100%
+	border-radius: $BORDER_RADIUS
+
+.no-hover-effect
+	color: #212121 !important
+	background-color: #FFFFFF !important
