@@ -223,7 +223,8 @@ label {
 }
 
 .socials-bar a {
-  margin: 5px 15px;
+  width: 300px;
+  margin: 5px auto;
   padding: 5px 15px;
   border-radius: 5px;
   display: -webkit-box;
@@ -282,12 +283,49 @@ label {
 }
 
 .profile-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-pic img {
   width: 100%;
+  max-width: 300px;
   border-radius: 5px;
 }
 
 .no-hover-effect {
   color: #212121 !important;
   background-color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .left-column {
+    padding: 10px;
+  }
+  .right-column {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 12px;
+  }
+  header p i {
+    font-size: 10px;
+  }
+  .lgt-table {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
