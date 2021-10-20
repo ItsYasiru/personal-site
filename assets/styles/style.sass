@@ -1,49 +1,72 @@
+/* Imports
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
 
+/* Variables
 $BORDER_RADIUS: 5px
 
+/* Element specific
 *
 	user-select: none
 	box-sizing: border-box
+
+::-webkit-scrollbar
+	display: none
+
+a
+	color: inherit
+	cursor: pointer !important
+	&[href^="http"]:empty::before
+		content: attr(href)
+
+label
+	cursor: pointer !important
+
+/* Main page componants
+	- html
+	- body
+	- header
+	- nav
+	- footer
 
 html
 	scrollbar-width: none
 	scroll-behavior: smooth
 
-::-webkit-scrollbar
-	display: none
-
 body
 	margin: 0 auto
 	font-family: 'Poppins', 'Arial', 'sans-serif'
-	color: #212121
-	background: #F1F1F1
+	background: #212121
 
 header
 	width: 100%
 	height: 200px
-	display: flex
-	flex-direction: column
-	align-items: center
-	justify-content: center
 	color: #FFFFFF
-	background: #212121
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-	h1
-		margin: 5px 0
-		font-size: 45px
-		font-weight: 700
-		display: inline-block
-		overflow: hidden
-		white-space: nowrap
-	p
-		margin: 5px 0
+	background-position: center
+	.content
+		width: 100%
+		height: 100%
 		display: flex
-		font-size: 16px
+		flex-direction: column
 		align-items: center
-		i
-			margin-right: 10px
-			font-size: 14px
+		justify-content: center
+		background: rgba(0,0, 0, 0.3)
+		backdrop-filter: blur(1.5px)
+		h1
+			margin: 5px 0
+			font-size: 45px
+			font-weight: 700
+			display: inline-block
+			overflow: hidden
+			white-space: nowrap
+		p
+			margin: 5px 0
+			display: flex
+			font-size: 16px
+			justify-content: center
+			i
+				margin-right: 10px
+				font-size: 14px
 
 nav
 	margin-top: 20px
@@ -51,15 +74,14 @@ nav
 	border-radius: $BORDER_RADIUS
 	display: flex
 	align-items: center
-	background: #212121
+	background: #343434
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 
 footer
 	margin-top: 20px
 	text-align: center
-	color: #212121
-	background: #DDDDDD
-	border: 1px solid #ADADAD
+	color: #ADADAD
+	background: #343434
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25)
 	p
 		margin: 0
@@ -68,33 +90,57 @@ footer
 		line-height: 10px
 		font-weight: 500
 
-a
-	color: inherit
-	cursor: pointer !important
-	&[href^="http"]:empty::before
-		content: attr(href)
-label
-	cursor: pointer !important
+/* Components
 
-.nav-button
-	padding: 5px 15px
-	border-radius: $BORDER_RADIUS
-	text-decoration: none
+.profile-pic
+	display: flex
+	justify-content: center
+	img
+		width: 100%
+		max-width: 300px
+		border-radius: $BORDER_RADIUS
+
+/* Themed componants
+	- drk: Dark
+	- lgt: Light
+	- trp: Transparent
+
+.drk-button
 	color: #FFFFFF
-	background: transparent
-	transition: all 0.3s
+	background: #212121
 	&:hover
-		transform: scale(1.1)
 		color: #212121
 		background: #FFFFFF
 
+.lgt-button
+	color: #212121
+	background: #FFFFFF
+	&:hover
+		color: #FFFFFF
+		background: transparent
+
+.trp-button
+	color: #FFFFFF
+	background: transparent
+	&:hover
+		color: #212121
+		background: #FFFFFF
+
+.drk-button, .lgt-button, .trp-button
+	padding: 5px 15px
+	border-radius: $BORDER_RADIUS
+	text-decoration: none
+	transition: all 0.3s
+	&:hover
+		transform: scale(1.1)
+
 .lgt-card
 	margin-top: 20px
-	border: 1px solid #ADADAD
-	border-radius: $BORDER_RADIUS
 	padding: 15px
-	background: #FFFFFF
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+	border-radius: $BORDER_RADIUS
+	color: #FFFFFF
+	background: #343434
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 	h2
 		margin-bottom: 10px
 		font-size: 22px
@@ -113,7 +159,7 @@ label
 	width: 100%
 	text-align: left
 	border-collapse: collapse
-	background: #FFFFFF
+	background: #212121
 	&[center-col^="1"]
 		td:nth-child(1)
 			text-align: center
@@ -121,27 +167,53 @@ label
 		td:nth-child(1), td:nth-child(2)
 			text-align: center
 	th
-		padding: 10px 15px
-		border: 1px solid #212121
+		padding: 10px
+		border: 1px solid #000000
 		text-align: center
-		color: #212121
+		color: #000000
 		background: #ADADAD
 	td
-		padding: 10px
-		border: 1px solid #ADADAD
+		padding: 25px 10px
+		font-size: 15px
+		border: 1px solid #000000
+		position: relative
+		&:empty::before
+			content: "-"
+		label
+			padding: 0 5px
+			position: absolute
+			top: 5px
+			right: 5px
+			font-size: 11px
+			border-radius: $BORDER_RADIUS
+			color: #000000
+			background: #40f100
+			&[st^="lang"]
+				background: #FFC300
+				&::after
+					content: "lang"
+			&[st^="skill"]
+				background: #5658ff
+				&::after
+					content: "skill"
+			&[st^="fram"]
+				background: #40f100
+				&::after
+					content: "framework"
+		.lgt-table
+			margin: -10px auto
+			max-width: 400px
+			td
+				padding: 15px 10px
 	tr
 		transition: all 0.3s
 		&:hover
-			color: #FFFFFF
-			background: #212121
+			color: #000000
+			background: #F1F1F1
 
-		a
-			text-decoration: underline
-
-.socials-bar
+.lgt-socials-bar
 	display: flex
 	flex-direction: column
-	justify-content: center
 	a
 		width: 300px
 		margin: 5px auto
@@ -151,10 +223,9 @@ label
 		align-items: center
 		font-size: 17px
 		text-decoration: none
-		color: #212121
-		background: #F1F1F1
+		color: #FFFFFF
+		background: #212121
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
-		border: 1px solid #ADADAD
 		transition: all 0.3s
 		&:hover
 			transform: scale(1.03)
@@ -164,6 +235,8 @@ label
 		label
 			width: 100%
 			text-align: center
+
+/* Positioning
 
 .left
 	margin-right: auto
@@ -182,17 +255,17 @@ label
 	padding: 0 10px
 	padding-right: 0
 
-.profile-pic
-	display: flex
-	justify-content: center
-	img
-		width: 100%
-		max-width: 300px
-		border-radius: $BORDER_RADIUS
+/* Utility
+
+[dbg]
+	border: 1px solid red
+
+[hidden]
+	display: none !important
 
 .no-hover-effect
-	color: #212121 !important
-	background-color: #FFFFFF !important
+	color: #FFFFFF !important
+	background-color: #212121 !important
 
 @media (max-width: 768px)
 	nav
