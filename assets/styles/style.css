@@ -24,6 +24,10 @@ a[href^="http"]:empty::before {
   content: attr(href);
 }
 
+a:hover {
+  color: #FFC300;
+}
+
 ul {
   margin: 0;
 }
@@ -108,7 +112,7 @@ header .content p i {
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 20px !important;
   padding: 10px 20px;
   border-radius: 5px;
   display: -webkit-box;
@@ -141,6 +145,7 @@ footer p {
 
 /* Components */
 .profile-pic {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +198,7 @@ footer p {
   padding: 5px 15px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: 600;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -215,11 +221,13 @@ footer p {
 .lgt-card h2 {
   margin-bottom: 10px;
   font-size: 22px;
+  font-weight: 600;
   text-align: center;
 }
 
 .lgt-card p {
   margin-bottom: 10px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -238,6 +246,7 @@ footer p {
 .lgt-table {
   width: 100%;
   font-size: 15px;
+  font-weight: 300;
   text-align: left;
   border-collapse: collapse;
   background: #212121;
@@ -253,6 +262,7 @@ footer p {
 
 .lgt-table th {
   padding: 10px;
+  border: 1px solid #111111;
   text-align: center;
   color: #FFFFFF;
   background: #111111;
@@ -309,7 +319,7 @@ footer p {
 }
 
 .lgt-table td .lgt-table td {
-  padding: 15px 10px;
+  padding: 10px;
 }
 
 .lgt-table tr {
@@ -344,6 +354,7 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
+  font-weight: 300;
   text-decoration: none;
   color: #FFFFFF;
   background: #212121;
@@ -382,16 +393,6 @@ footer p {
   text-align: center;
 }
 
-.left-column {
-  padding: 0 10px;
-  padding-left: 0;
-}
-
-.right-column {
-  padding: 0 10px;
-  padding-right: 0;
-}
-
 /* Utility */
 [dbg] {
   border: 1px solid red;
@@ -406,21 +407,7 @@ footer p {
   background-color: #212121 !important;
 }
 
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-  .left-column {
-    padding: 20px;
-  }
-  .right-column {
-    padding: 20px;
-  }
-  .right-column .lgt-card:first-child {
-    margin-top: -20px;
-  }
-}
-
+/* Media queries */
 @media (max-width: 767px) {
   header .content h1 {
     font-size: 30px;
@@ -431,10 +418,16 @@ footer p {
   header .content p i {
     font-size: 10px;
   }
+  nav {
+    display: none;
+  }
   .lgt-card h2 {
     font-size: 18px;
   }
   .lgt-card p {
+    font-size: 13px;
+  }
+  .lgt-socials-bar a {
     font-size: 13px;
   }
   .lgt-table {
