@@ -24,6 +24,10 @@ a[href^="http"]:empty::before {
   content: attr(href);
 }
 
+ul {
+  margin: 0;
+}
+
 label {
   cursor: pointer !important;
 }
@@ -51,6 +55,7 @@ header {
   color: #FFFFFF;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #343434;
   background-position: center;
 }
 
@@ -71,8 +76,6 @@ header .content {
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(1.5px);
-          backdrop-filter: blur(1.5px);
 }
 
 header .content h1 {
@@ -90,6 +93,10 @@ header .content p {
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -230,6 +237,7 @@ footer p {
 
 .lgt-table {
   width: 100%;
+  font-size: 15px;
   text-align: left;
   border-collapse: collapse;
   background: #212121;
@@ -245,16 +253,14 @@ footer p {
 
 .lgt-table th {
   padding: 10px;
-  border: 1px solid #000000;
   text-align: center;
-  color: #000000;
-  background: #ADADAD;
+  color: #FFFFFF;
+  background: #111111;
 }
 
 .lgt-table td {
-  padding: 25px 10px;
-  font-size: 15px;
-  border: 1px solid #000000;
+  padding: 25px 15px;
+  border: 1px solid #111111;
   position: relative;
 }
 
@@ -265,10 +271,10 @@ footer p {
 .lgt-table td label {
   padding: 0 5px;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 7px;
+  right: 7px;
   font-size: 11px;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #000000;
   background: #40f100;
 }
@@ -282,7 +288,7 @@ footer p {
 }
 
 .lgt-table td label[st^="skill"] {
-  background: #5658ff;
+  background: #00ffdd;
 }
 
 .lgt-table td label[st^="skill"]::after {
@@ -290,7 +296,7 @@ footer p {
 }
 
 .lgt-table td label[st^="fram"] {
-  background: #40f100;
+  background: #44ff00;
 }
 
 .lgt-table td label[st^="fram"]::after {
@@ -313,7 +319,7 @@ footer p {
 
 .lgt-table tr:hover {
   color: #000000;
-  background: #F1F1F1;
+  background: #d5d5d5;
 }
 
 .lgt-socials-bar {
@@ -405,25 +411,44 @@ footer p {
     display: none;
   }
   .left-column {
-    padding: 10px;
+    padding: 20px;
   }
   .right-column {
-    padding: 10px;
+    padding: 20px;
+  }
+  .right-column .lgt-card:first-child {
+    margin-top: -20px;
   }
 }
 
-@media (max-width: 375px) {
-  header h1 {
+@media (max-width: 767px) {
+  header .content h1 {
     font-size: 30px;
   }
-  header p {
+  header .content p {
     font-size: 12px;
   }
-  header p i {
+  header .content p i {
     font-size: 10px;
   }
-  .lgt-table {
+  .lgt-card h2 {
+    font-size: 18px;
+  }
+  .lgt-card p {
     font-size: 13px;
+  }
+  .lgt-table {
+    font-size: 10px;
+  }
+  .lgt-table td {
+    padding: 20px 5px;
+  }
+  .lgt-table td label {
+    font-size: 7px;
+    border-radius: 2px;
+  }
+  footer p {
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
