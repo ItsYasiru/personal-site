@@ -57,7 +57,7 @@ header
 		justify-content: center
 		background: rgba(0,0, 0, 0.3)
 		h1
-			margin: 5px 0
+			margin: 5px 10px
 			padding: 20px 40px
 			font-size: 45px
 			font-weight: 700
@@ -272,10 +272,20 @@ footer
 	background-color: #212121 !important
 
 /* Media queries
-@media (max-width: 768px)
+@media screen and (max-width: 1024px)
 	nav
-		display: none
-@media (max-width: 767px)
+		padding: 5px
+		.left
+			margin: auto
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			justify-content: center
+			a
+				padding: 5px 10px
+		.right
+			display: none
+@media screen and (max-width: 767px)
 	header .content
 		h1
 			font-size: 30px
@@ -301,3 +311,6 @@ footer
 	footer
 		p
 			font-size: 8px
+@media screen and (max-width: 374px)
+	body
+		display: none
