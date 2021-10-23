@@ -25,7 +25,7 @@ a[href^="http"]:empty::before {
 }
 
 a:hover {
-  color: #FFC300;
+  color: inherit;
 }
 
 ul {
@@ -84,35 +84,27 @@ header .content {
 
 header .content h1 {
   margin: 5px 0;
+  padding: 20px 40px;
   font-size: 45px;
   font-weight: 700;
   display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
+  text-align: center;
+  border-radius: 5px;
+  background: rgba(52, 52, 52, 0.57);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 
-header .content p {
-  margin: 5px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .content h1 p {
+  margin: 0;
+  margin-top: 5px;
   font-size: 16px;
-  font-weight: 600;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header .content p i {
-  margin-right: 10px;
-  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 
 nav {
-  margin-top: 20px !important;
+  margin-top: 20px;
   padding: 10px 20px;
   border-radius: 5px;
   display: -webkit-box;
@@ -145,18 +137,13 @@ footer p {
 
 /* Components */
 .profile-pic {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .profile-pic img {
   width: 100%;
-  max-width: 300px;
+  max-width: 330px;
   border-radius: 5px;
 }
 
@@ -210,7 +197,7 @@ footer p {
 
 .lgt-card {
   margin-top: 20px;
-  padding: 15px;
+  padding: 15px 25px;
   border-radius: 5px;
   color: #FFFFFF;
   background: #343434;
@@ -219,14 +206,14 @@ footer p {
 }
 
 .lgt-card h2 {
-  margin-bottom: 10px;
+  margin: 5px 0;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
 .lgt-card p {
-  margin-bottom: 10px;
+  margin: 5px 0;
   font-weight: 400;
   text-align: center;
 }
@@ -244,6 +231,7 @@ footer p {
 }
 
 .lgt-table {
+  margin: 5px 0;
   width: 100%;
   font-size: 15px;
   font-weight: 300;
@@ -257,6 +245,14 @@ footer p {
 }
 
 .lgt-table[center-col^="2"] td:nth-child(1), .lgt-table[center-col^="2"] td:nth-child(2) {
+  text-align: center;
+}
+
+.lgt-table[center-col^="3"] td:nth-child(1), .lgt-table[center-col^="3"] td:nth-child(2), .lgt-table[center-col^="3"] td:nth-child(3) {
+  text-align: center;
+}
+
+.lgt-table[center-col^="4"] td:nth-child(1), .lgt-table[center-col^="4"] td:nth-child(2), .lgt-table[center-col^="4"] td:nth-child(3), .lgt-table[center-col^="4"] td:nth-child(4) {
   text-align: center;
 }
 
@@ -315,7 +311,7 @@ footer p {
 
 .lgt-table td .lgt-table {
   margin: -10px auto;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .lgt-table td .lgt-table td {
@@ -329,7 +325,7 @@ footer p {
 
 .lgt-table tr:hover {
   color: #000000;
-  background: #d5d5d5;
+  background: #e8e8e8;
 }
 
 .lgt-socials-bar {
@@ -354,7 +350,6 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   font-size: 17px;
-  font-weight: 300;
   text-decoration: none;
   color: #FFFFFF;
   background: #212121;
@@ -408,6 +403,12 @@ footer p {
 }
 
 /* Media queries */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   header .content h1 {
     font-size: 30px;
@@ -417,9 +418,6 @@ footer p {
   }
   header .content p i {
     font-size: 10px;
-  }
-  nav {
-    display: none;
   }
   .lgt-card h2 {
     font-size: 18px;

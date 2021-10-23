@@ -18,7 +18,7 @@ a
 	&[href^="http"]:empty::before
 		content: attr(href)
 	&:hover
-		color: #FFC300
+		color: inherit
 
 ul
 	margin: 0
@@ -58,24 +58,23 @@ header
 		background: rgba(0,0, 0, 0.3)
 		h1
 			margin: 5px 0
+			padding: 20px 40px
 			font-size: 45px
 			font-weight: 700
 			display: inline-block
-			overflow: hidden
-			white-space: nowrap
-		p
-			margin: 5px 0
-			display: flex
-			font-size: 16px
-			font-weight: 600
-			align-items: center
-			justify-content: center
-			i
-				margin-right: 10px
-				font-size: 14px
+			text-align: center
+			border-radius: $BORDER_RADIUS
+			background: rgba(52, 52, 52, 0.57)
+			backdrop-filter: blur(1px)
+			p
+				margin: 0
+				margin-top: 5px
+				font-size: 16px
+				font-weight: 500
+				text-align: center
 
 nav
-	margin-top: 20px !important
+	margin-top: 20px
 	padding: 10px 20px
 	border-radius: $BORDER_RADIUS
 	display: flex
@@ -98,12 +97,11 @@ footer
 
 /* Components
 .profile-pic
-	padding: 10px
-	display: flex
-	justify-content: center
+	margin: 20px 0
+	text-align: center
 	img
 		width: 100%
-		max-width: 300px
+		max-width: 330px
 		border-radius: $BORDER_RADIUS
 
 /* Themed componants
@@ -142,18 +140,18 @@ footer
 
 .lgt-card
 	margin-top: 20px
-	padding: 15px
+	padding: 15px 25px
 	border-radius: $BORDER_RADIUS
 	color: #FFFFFF
 	background: #343434
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 	h2
-		margin-bottom: 10px
+		margin: 5px 0
 		font-size: 22px
-		font-weight: 600
+		font-weight: 700
 		text-align: center
 	p
-		margin-bottom: 10px
+		margin: 5px 0
 		font-weight: 400
 		text-align: center
 		&[text-align^="left"]
@@ -164,6 +162,7 @@ footer
 			text-align: right !important
 
 .lgt-table
+	margin: 5px 0
 	width: 100%
 	font-size: 15px
 	font-weight: 300
@@ -175,6 +174,12 @@ footer
 			text-align: center
 	&[center-col^="2"]
 		td:nth-child(1), td:nth-child(2)
+			text-align: center
+	&[center-col^="3"]
+		td:nth-child(1), td:nth-child(2), td:nth-child(3)
+			text-align: center
+	&[center-col^="4"]
+		td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(4)
 			text-align: center
 	th
 		padding: 10px
@@ -211,14 +216,14 @@ footer
 					content: "framework"
 		.lgt-table
 			margin: -10px auto
-			max-width: 400px
+			max-width: 600px
 			td
 				padding: 10px
 	tr
 		transition: all 0.3s
 		&:hover
 			color: #000000
-			background: #d5d5d5
+			background: #e8e8e8
 
 .lgt-socials-bar
 	display: flex
@@ -231,7 +236,6 @@ footer
 		display: flex
 		align-items: center
 		font-size: 17px
-		font-weight: 300
 		text-decoration: none
 		color: #FFFFFF
 		background: #212121
@@ -268,6 +272,9 @@ footer
 	background-color: #212121 !important
 
 /* Media queries
+@media (max-width: 768px)
+	nav
+		display: none
 @media (max-width: 767px)
 	header .content
 		h1
@@ -276,8 +283,6 @@ footer
 			font-size: 12px
 			i
 				font-size: 10px
-	nav
-		display: none
 	.lgt-card
 		h2
 			font-size: 18px
