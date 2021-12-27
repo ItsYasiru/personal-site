@@ -231,7 +231,7 @@ footer p {
 }
 
 .lgt-table {
-  margin: 5px 0;
+  margin: 10px 0;
   width: 100%;
   font-size: 15px;
   font-weight: 300;
@@ -268,6 +268,10 @@ footer p {
   padding: 25px 15px;
   border: 1px solid #111111;
   position: relative;
+}
+
+.lgt-table td[empty] {
+  text-align: center;
 }
 
 .lgt-table td:empty::before {
