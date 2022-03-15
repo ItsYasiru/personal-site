@@ -60,10 +60,11 @@ header {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: #343434;
+  background-image: url("/assets/images/header-background.png");
   background-position: center;
 }
 
-header .content {
+header .tile {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -82,7 +83,7 @@ header .content {
   background: rgba(0, 0, 0, 0.3);
 }
 
-header .content h1 {
+header .tile h1 {
   margin: 5px 10px;
   padding: 20px 40px;
   font-size: 45px;
@@ -95,7 +96,7 @@ header .content h1 {
           backdrop-filter: blur(1px);
 }
 
-header .content h1 p {
+header .tile h1 p {
   margin: 0;
   margin-top: 5px;
   font-size: 16px;
@@ -105,7 +106,7 @@ header .content h1 p {
 
 nav {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,17 +183,12 @@ footer p {
 }
 
 .drk-button, .lgt-button, .trp-button {
-  padding: 5px 15px;
   border-radius: 5px;
-  text-decoration: none;
+  padding: 5px 15px;
   font-weight: 600;
+  text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.drk-button:hover, .lgt-button:hover, .trp-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .lgt-card {
@@ -203,13 +199,6 @@ footer p {
   background: #343434;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.lgt-card h2 {
-  margin: 5px 0;
-  font-size: 22px;
-  font-weight: 700;
-  text-align: center;
 }
 
 .lgt-card p {
@@ -228,6 +217,18 @@ footer p {
 
 .lgt-card p[text-align^="right"] {
   text-align: right !important;
+}
+
+.lgt-card h2 {
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lgt-card hr {
+  margin: 10px 0;
 }
 
 .lgt-table {
@@ -359,13 +360,15 @@ footer p {
   background: #212121;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .lgt-socials-bar a:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
