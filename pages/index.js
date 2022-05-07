@@ -22,6 +22,14 @@ function IndexPage() {
                 <Link href='#contact-menu'>Get In Touch</Link>
             </NavBar>
 
+            <header>
+                <h1>Yas_!_ru's Website</h1>
+                <p>
+                    Programming &amp; Tech enthusiast, Professional bug
+                    developer.
+                </p>
+            </header>
+
             <Card>
                 <section>
                     <div className='image-wrapper'>

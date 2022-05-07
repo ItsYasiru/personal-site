@@ -13,6 +13,33 @@ body {
     font-family: "Poppins", "Helvetica Neue", "sans-serif";
 }
 
+header {
+    display: none;
+    overflow: hidden;
+
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+    text-align: center;
+    background: #343434;
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    body {
+        padding: 10px;
+    }
+    header {
+        display: block;
+    }
+}
+
 footer {
     padding: 5px;
     border-radius: 5px;
@@ -30,6 +57,10 @@ footer {
 
 a {
     color: inherit;
+}
+
+button {
+    font-family: "Poppins", "Helvetica Neue", "sans-serif";
 }
 
 .row {

@@ -1,36 +1,38 @@
-@mixin theme {
-    h1 {
-        position: relative;
-        width: 100%;
-        margin: 0 0 40px 0;
-        padding: 0;
-        padding-bottom: 5px;
+.cardTitle {
+    position: relative;
+    width: 100%;
+    margin: 40px 0 40px 0;
+    padding: 0;
+    padding-bottom: 5px;
 
-        font-size: 30px;
-        font-weight: 700;
-        &:after {
-            content: "";
-            position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    &:after {
+        content: "";
+        position: absolute;
 
-            left: 0;
-            bottom: 0;
-            width: 100px;
-            height: 2px;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 2px;
 
-            background: #e8e8e8;
-        }
-        label {
-            position: absolute;
-
-            top: -30px;
-            left: -40px;
-
-            color: #e8e8e820;
-
-            font-size: 90px;
-        }
+        background: #e8e8e8;
     }
+    label {
+        position: absolute;
 
+        top: -30px;
+        left: -40px;
+        z-index: -1;
+        white-space: nowrap;
+
+        color: #e8e8e820;
+
+        font-size: 90px;
+    }
+}
+
+@mixin theme {
     table {
         text-align: center;
         box-shadow: 0 0 20px rgb(0 0 0 / 30%);
@@ -61,6 +63,23 @@
             }
         }
     }
+
+    @media screen and (max-width: 875px) {
+        h1 {
+            margin-bottom: 15px;
+            label {
+                top: -35px;
+                left: 10px;
+                font-size: 60px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+        table {
+            font-size: 10px;
+        }
+    }
 }
 
 .main {
@@ -75,12 +94,11 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-
     &:first-of-type {
         height: calc(100vh - 90px); /* Countering the body padding */
     }
     &:nth-child(odd) .inner {
-        flex-direction: row-reverse !important;
+        flex-direction: row-reverse;
     }
 
     .inner {
@@ -91,10 +109,6 @@
 
         section {
             padding: 20px 30px;
-            &:only-child {
-                width: 100% !important;
-                margin: 0 !important;
-            }
             &:first-child {
                 width: 30%;
                 margin-right: auto;
@@ -102,6 +116,28 @@
             &:last-child {
                 width: 70%;
                 margin-left: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1086px) {
+    .main {
+        height: auto;
+        &:first-of-type {
+            height: auto;
+        }
+
+        .inner {
+            flex-direction: column !important;
+
+            section {
+                padding: 20px;
+                width: 100% !important;
+                &:last-child {
+                    padding-top: 0;
+                    width: 100% !important;
+                }
             }
         }
     }

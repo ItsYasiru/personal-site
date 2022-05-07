@@ -3,7 +3,7 @@ import classes from "./Card.module.scss";
 function CardTitle(props) {
     const { title } = props;
     return (
-        <h1>
+        <h1 className={classes.cardTitle}>
             {title}
             <label>{title}</label>
         </h1>
