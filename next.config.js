@@ -3,7 +3,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        loader: "custom",
+        domains: ["github-readme-stats.vercel.app"],
     },
 };
 
