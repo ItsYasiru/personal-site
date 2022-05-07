@@ -143,6 +143,7 @@ function IndexPage() {
                             height='200px'
                             src='https://github-readme-stats.vercel.app/api/top-langs/?username=ItsYasiru&layout=compact&border_radius=5px&hide_border=true&bg_color=343434&hide=html&text_color=e8e8e8&title_color=e8e8e8'
                             alt='Most used languages - Github statistics'
+                            unoptimized='true'
                         />
                     </div>
                 </section>
